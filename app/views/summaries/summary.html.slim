@@ -1,0 +1,12 @@
+h1
+  | task一覧（しあわせ）
+h2
+  | 現在のしあわせ一覧
+
+- @tasks.each do |task|
+  = task.name :name, "タイトル"
+  = task.label :label, "ラベル"
+  = task.contents :contents, "内容"
+  = task.priority :priority, "優先度"
+  = task.status :status,"ステータス"
+  = task.limit :limit, "期限"

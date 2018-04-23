@@ -38,6 +38,14 @@ gem 'jbuilder', '~> 2.5'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
+# NOTE: View handlerの設定で使用されるのでどの環境でも必要
+gem 'slim'
+
+# ステートマシン
+gem 'aasm'
+
+# ページネーション
+gem 'kaminari'
 
 group :production do
   gem 'pg'
@@ -46,6 +54,9 @@ end
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
 end
 
 group :development do
