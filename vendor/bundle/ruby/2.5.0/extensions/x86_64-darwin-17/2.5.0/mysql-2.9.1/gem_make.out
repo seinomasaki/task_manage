@@ -1,0 +1,165 @@
+current directory: /Users/masaki/Desktop/task_manage/vendor/bundle/ruby/2.5.0/gems/mysql-2.9.1/ext/mysql_api
+/usr/local/opt/ruby/bin/ruby -r ./siteconf20180420-70817-5ti8of.rb extconf.rb
+checking for mysql_ssl_set()... yes
+checking for rb_str_set_len()... yes
+checking for rb_thread_start_timer()... no
+checking for mysql.h... yes
+creating Makefile
+
+current directory: /Users/masaki/Desktop/task_manage/vendor/bundle/ruby/2.5.0/gems/mysql-2.9.1/ext/mysql_api
+make "DESTDIR=" clean
+
+current directory: /Users/masaki/Desktop/task_manage/vendor/bundle/ruby/2.5.0/gems/mysql-2.9.1/ext/mysql_api
+make "DESTDIR="
+compiling mysql.c
+mysql.c:588:9: warning: implicit conversion loses integer precision: 'my_ulonglong' (aka 'unsigned long long') to 'unsigned int' [-Wshorten-64-to-32]
+    n = mysql_num_rows(res);
+      ~ ^~~~~~~~~~~~~~~~~~~
+mysql.c:633:9: warning: implicit conversion loses integer precision: 'my_ulonglong' (aka 'unsigned long long') to 'unsigned int' [-Wshorten-64-to-32]
+    n = mysql_num_rows(res);
+      ~ ^~~~~~~~~~~~~~~~~~~
+mysql.c:1068:73: warning: implicit conversion loses integer precision: 'unsigned long' to 'int' [-Wshorten-64-to-32]
+                int len = strlen(fields[i].table)+strlen(fields[i].name)+1;
+                    ~~~   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+mysql.c:1320:74: error: use of undeclared identifier 'rb_cFixnum'
+        else if (argv[i] == rb_cNumeric || argv[i] == rb_cInteger || argv[i] == rb_cFixnum)
+                                                                                ^
+mysql.c:1661:9: warning: implicit conversion loses integer precision: 'unsigned long' to 'int' [-Wshorten-64-to-32]
+    n = mysql_stmt_param_count(s->stmt);
+      ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mysql.c:1775:5: warning: division by zero is undefined [-Wdivision-by-zero]
+    rb_scan_args(argc, argv, "08", &year, &month, &day, &hour, &minute, &second, &neg, &second_part);
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/Cellar/ruby/2.5.1/include/ruby-2.5.0/ruby/ruby.h:2182:9: note: expanded from macro 'rb_scan_args'
+        rb_scan_args0(argc,argvp,fmt,\
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/Cellar/ruby/2.5.1/include/ruby-2.5.0/ruby/ruby.h:2355:9: note: expanded from macro 'rb_scan_args0'
+                     (rb_scan_args_verify(fmt, varc), vars))
+                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/Cellar/ruby/2.5.1/include/ruby-2.5.0/ruby/ruby.h:2240:11: note: expanded from macro 'rb_scan_args_verify'
+        verify = rb_scan_args_verify_count(fmt, varc); \
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+note: (skipping 4 expansions in backtrace; use -fmacro-backtrace-limit=0 to see all)
+/usr/local/Cellar/ruby/2.5.1/include/ruby-2.5.0/ruby/ruby.h:2206:6: note: expanded from macro 'rb_scan_args_count_hash'
+     rb_scan_args_count_block(fmt, ofs, varc, vari) : \
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/Cellar/ruby/2.5.1/include/ruby-2.5.0/ruby/ruby.h:2201:6: note: expanded from macro 'rb_scan_args_count_block'
+     rb_scan_args_count_end(fmt, ofs, varc, vari) : \
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/Cellar/ruby/2.5.1/include/ruby-2.5.0/ruby/ruby.h:2197:12: note: expanded from macro 'rb_scan_args_count_end'
+    ((vari)/(!fmt[ofs] || rb_scan_args_bad_format(fmt)))
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mysql.c:1775:5: warning: division by zero is undefined [-Wdivision-by-zero]
+    rb_scan_args(argc, argv, "08", &year, &month, &day, &hour, &minute, &second, &neg, &second_part);
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/Cellar/ruby/2.5.1/include/ruby-2.5.0/ruby/ruby.h:2182:9: note: expanded from macro 'rb_scan_args'
+        rb_scan_args0(argc,argvp,fmt,\
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/Cellar/ruby/2.5.1/include/ruby-2.5.0/ruby/ruby.h:2355:9: note: expanded from macro 'rb_scan_args0'
+                     (rb_scan_args_verify(fmt, varc), vars))
+                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/Cellar/ruby/2.5.1/include/ruby-2.5.0/ruby/ruby.h:2240:11: note: expanded from macro 'rb_scan_args_verify'
+        verify = rb_scan_args_verify_count(fmt, varc); \
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+note: (skipping 4 expansions in backtrace; use -fmacro-backtrace-limit=0 to see all)
+/usr/local/Cellar/ruby/2.5.1/include/ruby-2.5.0/ruby/ruby.h:2206:6: note: expanded from macro 'rb_scan_args_count_hash'
+     rb_scan_args_count_block(fmt, ofs, varc, vari) : \
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/Cellar/ruby/2.5.1/include/ruby-2.5.0/ruby/ruby.h:2202:6: note: expanded from macro 'rb_scan_args_count_block'
+     rb_scan_args_count_end(fmt, ofs+1, varc, vari+1))
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/Cellar/ruby/2.5.1/include/ruby-2.5.0/ruby/ruby.h:2197:12: note: expanded from macro 'rb_scan_args_count_end'
+    ((vari)/(!fmt[ofs] || rb_scan_args_bad_format(fmt)))
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mysql.c:1775:5: warning: division by zero is undefined [-Wdivision-by-zero]
+    rb_scan_args(argc, argv, "08", &year, &month, &day, &hour, &minute, &second, &neg, &second_part);
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/Cellar/ruby/2.5.1/include/ruby-2.5.0/ruby/ruby.h:2182:9: note: expanded from macro 'rb_scan_args'
+        rb_scan_args0(argc,argvp,fmt,\
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/Cellar/ruby/2.5.1/include/ruby-2.5.0/ruby/ruby.h:2355:9: note: expanded from macro 'rb_scan_args0'
+                     (rb_scan_args_verify(fmt, varc), vars))
+                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/Cellar/ruby/2.5.1/include/ruby-2.5.0/ruby/ruby.h:2240:11: note: expanded from macro 'rb_scan_args_verify'
+        verify = rb_scan_args_verify_count(fmt, varc); \
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+note: (skipping 4 expansions in backtrace; use -fmacro-backtrace-limit=0 to see all)
+/usr/local/Cellar/ruby/2.5.1/include/ruby-2.5.0/ruby/ruby.h:2207:6: note: expanded from macro 'rb_scan_args_count_hash'
+     rb_scan_args_count_block(fmt, ofs+1, varc, vari+1))
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/Cellar/ruby/2.5.1/include/ruby-2.5.0/ruby/ruby.h:2201:6: note: expanded from macro 'rb_scan_args_count_block'
+     rb_scan_args_count_end(fmt, ofs, varc, vari) : \
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/Cellar/ruby/2.5.1/include/ruby-2.5.0/ruby/ruby.h:2197:12: note: expanded from macro 'rb_scan_args_count_end'
+    ((vari)/(!fmt[ofs] || rb_scan_args_bad_format(fmt)))
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mysql.c:1775:5: warning: division by zero is undefined [-Wdivision-by-zero]
+    rb_scan_args(argc, argv, "08", &year, &month, &day, &hour, &minute, &second, &neg, &second_part);
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/Cellar/ruby/2.5.1/include/ruby-2.5.0/ruby/ruby.h:2182:9: note: expanded from macro 'rb_scan_args'
+        rb_scan_args0(argc,argvp,fmt,\
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/Cellar/ruby/2.5.1/include/ruby-2.5.0/ruby/ruby.h:2355:9: note: expanded from macro 'rb_scan_args0'
+                     (rb_scan_args_verify(fmt, varc), vars))
+                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/Cellar/ruby/2.5.1/include/ruby-2.5.0/ruby/ruby.h:2240:11: note: expanded from macro 'rb_scan_args_verify'
+        verify = rb_scan_args_verify_count(fmt, varc); \
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+note: (skipping 4 expansions in backtrace; use -fmacro-backtrace-limit=0 to see all)
+/usr/local/Cellar/ruby/2.5.1/include/ruby-2.5.0/ruby/ruby.h:2206:6: note: expanded from macro 'rb_scan_args_count_hash'
+     rb_scan_args_count_block(fmt, ofs, varc, vari) : \
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/Cellar/ruby/2.5.1/include/ruby-2.5.0/ruby/ruby.h:2201:6: note: expanded from macro 'rb_scan_args_count_block'
+     rb_scan_args_count_end(fmt, ofs, varc, vari) : \
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/Cellar/ruby/2.5.1/include/ruby-2.5.0/ruby/ruby.h:2197:12: note: expanded from macro 'rb_scan_args_count_end'
+    ((vari)/(!fmt[ofs] || rb_scan_args_bad_format(fmt)))
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mysql.c:1775:5: warning: division by zero is undefined [-Wdivision-by-zero]
+    rb_scan_args(argc, argv, "08", &year, &month, &day, &hour, &minute, &second, &neg, &second_part);
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/Cellar/ruby/2.5.1/include/ruby-2.5.0/ruby/ruby.h:2182:9: note: expanded from macro 'rb_scan_args'
+        rb_scan_args0(argc,argvp,fmt,\
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/Cellar/ruby/2.5.1/include/ruby-2.5.0/ruby/ruby.h:2355:9: note: expanded from macro 'rb_scan_args0'
+                     (rb_scan_args_verify(fmt, varc), vars))
+                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/Cellar/ruby/2.5.1/include/ruby-2.5.0/ruby/ruby.h:2240:11: note: expanded from macro 'rb_scan_args_verify'
+        verify = rb_scan_args_verify_count(fmt, varc); \
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+note: (skipping 4 expansions in backtrace; use -fmacro-backtrace-limit=0 to see all)
+/usr/local/Cellar/ruby/2.5.1/include/ruby-2.5.0/ruby/ruby.h:2206:6: note: expanded from macro 'rb_scan_args_count_hash'
+     rb_scan_args_count_block(fmt, ofs, varc, vari) : \
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/Cellar/ruby/2.5.1/include/ruby-2.5.0/ruby/ruby.h:2201:6: note: expanded from macro 'rb_scan_args_count_block'
+     rb_scan_args_count_end(fmt, ofs, varc, vari) : \
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/Cellar/ruby/2.5.1/include/ruby-2.5.0/ruby/ruby.h:2197:12: note: expanded from macro 'rb_scan_args_count_end'
+    ((vari)/(!fmt[ofs] || rb_scan_args_bad_format(fmt)))
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+mysql.c:1775:5: warning: division by zero is undefined [-Wdivision-by-zero]
+    rb_scan_args(argc, argv, "08", &year, &month, &day, &hour, &minute, &second, &neg, &second_part);
+    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/Cellar/ruby/2.5.1/include/ruby-2.5.0/ruby/ruby.h:2182:9: note: expanded from macro 'rb_scan_args'
+        rb_scan_args0(argc,argvp,fmt,\
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/Cellar/ruby/2.5.1/include/ruby-2.5.0/ruby/ruby.h:2355:9: note: expanded from macro 'rb_scan_args0'
+                     (rb_scan_args_verify(fmt, varc), vars))
+                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/Cellar/ruby/2.5.1/include/ruby-2.5.0/ruby/ruby.h:2240:11: note: expanded from macro 'rb_scan_args_verify'
+        verify = rb_scan_args_verify_count(fmt, varc); \
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+note: (skipping 5 expansions in backtrace; use -fmacro-backtrace-limit=0 to see all)
+/usr/local/Cellar/ruby/2.5.1/include/ruby-2.5.0/ruby/ruby.h:2206:6: note: expanded from macro 'rb_scan_args_count_hash'
+     rb_scan_args_count_block(fmt, ofs, varc, vari) : \
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/Cellar/ruby/2.5.1/include/ruby-2.5.0/ruby/ruby.h:2201:6: note: expanded from macro 'rb_scan_args_count_block'
+     rb_scan_args_count_end(fmt, ofs, varc, vari) : \
+     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/local/Cellar/ruby/2.5.1/include/ruby-2.5.0/ruby/ruby.h:2197:12: note: expanded from macro 'rb_scan_args_count_end'
+    ((vari)/(!fmt[ofs] || rb_scan_args_bad_format(fmt)))
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+10 warnings and 1 error generated.
+make: *** [mysql.o] Error 1
+
+make failed, exit code 2

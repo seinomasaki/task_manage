@@ -5,13 +5,8 @@ ruby '2.5.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.0.rc2'
-gem 'mysql2', group: [:development, :test]
-group :production do
-  gem 'pg'
-  # heroku上でassetsをうまく取り扱うためのものだったはず
-  gem 'rails_12factor'
-end
 
+gem 'mysql2'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use Puma as the app server
@@ -40,32 +35,17 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-# NOTE: View handlerの設定で使用されるのでどの環境でも必要
-gem 'slim'
-
-# ステートマシン
-gem 'aasm'
-
-# ページネーション
-gem 'kaminari'
-
-gem 'bootstrap-sass', '~> 3.3.6'
-
-
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
+
+
+group :production do
+  gem 'pg'
+end
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-
-  gem 'rspec-rails'
-  gem 'factory_girl_rails'
-end
-
-group :test do
-  gem 'capybara'
-  # gem 'selenium-webdriver'
 end
 
 group :development do
@@ -76,14 +56,14 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
-#
-# group :test do
-#   # Adds support for Capybara system testing and selenium driver
-#   gem 'capybara', '>= 2.15', '< 4.0'
-#   gem 'selenium-webdriver'
-#   # Easy installation and use of chromedriver to run system tests with Chrome
-#   gem 'chromedriver-helper'
-# end
+
+group :test do
+  # Adds support for Capybara system testing and selenium driver
+  gem 'capybara', '>= 2.15', '< 4.0'
+  gem 'selenium-webdriver'
+  # Easy installation and use of chromedriver to run system tests with Chrome
+  gem 'chromedriver-helper'
+end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
