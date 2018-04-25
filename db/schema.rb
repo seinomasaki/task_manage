@@ -12,14 +12,15 @@
 
 ActiveRecord::Schema.define(version: 2018_04_23_065656) do
 
-  create_table "tasks", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "summaries", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "task_name"
+    t.string "label"
+    t.text "contents"
+    t.string "time_limit"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.boolean "disp_flag", default: false
+    t.boolean "delete_flag", default: false
   end
 
   create_table "tasks", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
