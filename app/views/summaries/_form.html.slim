@@ -1,0 +1,14 @@
+= form_for @tasks do |f|
+ dt = f.label :タスク名
+ dt = f.text_field :task_name
+
+ dt = f.label :ラベル
+ dt = f.text_field :label
+
+ dt = f.label :期限
+ dt = f.text_field :time_limit
+
+ dt = f.label :内容
+ dt = f.text_area :contents
+
+ dt = f.submit :登録

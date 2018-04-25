@@ -3,7 +3,5 @@
 #
 # Examples:
 #
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
-
-task.create(:name => "task", :label => "宇宙", :contents => "can't rails", :priority => "低", :status => "着手", :limit => "2018/04/23")
+#   movies = Movie.new([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
+#   Character.new(name: 'Luke', movie: movies.first)

@@ -1,0 +1,20 @@
+h2
+  | task情報
+dl
+  dt task_name:
+  dd = @tasks.task_name
+
+  dt label:
+  dd = @tasks.label
+  dt time_limit:
+  dd = @tasks.time_limit
+
+  dt contents:
+  dd = @tasks.contents
+
+table
+  tr
+    td
+      = link_to '一覧', summaries_path
+    td
+      = link_to '編集', edit_summary_path
