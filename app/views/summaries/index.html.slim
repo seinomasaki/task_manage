@@ -8,10 +8,12 @@ h2
 table
   tr
     th id
-    th task_name
-    th label
-    th contents
-    th limit
+    th タスク名
+    th ラベル
+    th 内容
+    th 優先度
+    th ステータス
+    th 期限
     th 作成日
 
   - @tasks.each do |task|
@@ -21,8 +23,8 @@ table
         td = task.task_name
         td = task.label
         td = task.contents
-        /td = task.priority :priority
-        /td = task.status :status
+        td = task.priority
+        td = task.status
         td = task.time_limit
         td = task.created_at
 

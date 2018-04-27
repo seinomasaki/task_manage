@@ -166,4 +166,8 @@ module RSpec
       end
     end
   end
+
+  def self.feature(i, options)
+    # code here
+  end
 end

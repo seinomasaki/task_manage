@@ -16,7 +16,9 @@ ActiveRecord::Schema.define(version: 2018_04_23_065656) do
     t.string "task_name"
     t.string "label"
     t.text "contents"
-    t.string "time_limit"
+    t.datetime "time_limit"
+    t.string "status"
+    t.string "priority"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.boolean "disp_flag", default: false

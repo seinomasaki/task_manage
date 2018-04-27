@@ -25,7 +25,7 @@ class SummariesController < ApplicationController
   def destroy
     @tasks.destroy
     flash[:notice] = 'タスクを削除しました。'
-    redirect_to summary_path
+    redirect_to summaries_path
   end
 
   def update
@@ -41,7 +41,7 @@ class SummariesController < ApplicationController
   private
 
   def tasks_params
-    params.require(:summary).permit(:task_name, :label, :time_limit, :contents)
+    params.require(:summary).permit(:task_name, :label, :time_limit, :contents, :status, :priority)
   end
 
   def set_task

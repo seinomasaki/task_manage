@@ -4,10 +4,9 @@ class CreateSummaries < ActiveRecord::Migration[5.2]
       t.string :task_name
       t.string :label
       t.text :contents
-      t.string :time_limit
-
-      # t. :status
-      # t. :priority
+      t.datetime :time_limit
+      t.string :status
+      t.string :priority
       t.datetime :created_at, default: -> { 'NOW()' }
       t.datetime :updated_at, default: -> { 'NOW()' }
       t.boolean :disp_flag, default:false
