@@ -7,7 +7,7 @@ h2
   | 現在のしあわせ一覧
 table
   tr
-    th id
+    / th id
     th タスク名
     th ラベル
     th 内容
@@ -16,10 +16,10 @@ table
     th 期限
     th 作成日
 
-  - @tasks.each do |task|
-    - if !task.delete_flag
+  tbody
+    - @tasks.each do |task|
       tr
-        td = task.id
+        / td = task.id
         td = task.task_name
         td = task.label
         td = task.contents
@@ -27,10 +27,7 @@ table
         td = task.status
         td = task.time_limit
         td = task.created_at
-
-        td
-          = link_to '編集', edit_summary_path(task.id)
-        td
-          = link_to '削除', summary_path(task.id), method: :delete
+        td = link_to '編集', edit_summary_path(task.id), id: 'edit_id'
+        td = link_to '削除', summary_path(task.id), method: :delete, id: 'delete_id'
 br
 = link_to '新規登録', new_summary_path
