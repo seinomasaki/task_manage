@@ -1,27 +1,27 @@
-h2
-  | task情報
+h2 = I18n.t('activerecord.attributes.view.show')
+
 dl
-  dt task_name:
+  dt = Summary.human_attribute_name :task_name
   dd = @tasks.task_name
 
-  dt label:
+  dt = Summary.human_attribute_name :label
   dd = @tasks.label
 
-  dt time_limit:
+  dt = Summary.human_attribute_name :time_limit
   dd = @tasks.time_limit
 
-  dt contents:
+  dt = Summary.human_attribute_name :contents
   dd = @tasks.contents
 
-  dt status:
+  dt = Summary.human_attribute_name :status
   dd = @tasks.status
 
-  dt priority:
+  dt = Summary.human_attribute_name :priority
   dd = @tasks.priority
 
 table
   tr
     td
-      = link_to '一覧', summaries_path
+      = link_to I18n.t('activerecord.attributes.link.index'), summaries_path
     td
-      = link_to '編集', edit_summary_path
+      = link_to I18n.t('activerecord.attributes.link.edit'), edit_summary_path

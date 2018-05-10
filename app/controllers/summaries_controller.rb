@@ -1,7 +1,10 @@
+# frozen_string_literal: true
 class SummariesController < ApplicationController
   before_action :set_task, only: %i[show edit update destroy]
+  helper_method :sort_column, :sort_direction
+
   def index
-    @tasks = Summary.all
+    @tasks = Summary.all.unscoped.order(sort_column + ' ' + sort_direction)
   end
 
   def new
@@ -11,7 +14,7 @@ class SummariesController < ApplicationController
   def create
     @tasks = Summary.new(tasks_params)
     if @tasks.save
-      flash[:notice] = 'タスクを作成しました。'
+      flash[:notice] = t('activerecord.attributes.flash.create')
       redirect_to @tasks
     else
       render 'new'
@@ -24,13 +27,13 @@ class SummariesController < ApplicationController
 
   def destroy
     @tasks.destroy
-    flash[:notice] = 'タスクを削除しました。'
+    flash[:notice] = t('activerecord.attributes.flash.destroy')
     redirect_to summaries_path
   end
 
   def update
     if @tasks.update(tasks_params)
-      flash[:notice] = 'タスクを編集しました。'
+      flash[:notice] = t('activerecord.attributes.flash.update')
       redirect_to @tasks
     else
       render 'edit'
@@ -39,7 +42,6 @@ class SummariesController < ApplicationController
 
 
   private
-
   def tasks_params
     params.require(:summary).permit(:task_name, :label, :time_limit, :contents, :status, :priority)
   end
@@ -48,4 +50,11 @@ class SummariesController < ApplicationController
     @tasks = Summary.find(params[:id])
   end
 
+  def sort_direction
+    %w[asc desc].include?(params[:direction]) ?  params[:direction] : 'desc'
+  end
+
+  def sort_column
+    Summary.column_names.include?(params[:sort]) ? params[:sort] : 'created_at'
+  end
 end

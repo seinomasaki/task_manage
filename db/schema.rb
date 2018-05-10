@@ -25,15 +25,6 @@ ActiveRecord::Schema.define(version: 2018_04_23_065656) do
     t.boolean "delete_flag", default: false
   end
 
-  create_table "tasks", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.string "title"
-    t.text "memo"
-    t.string "author"
-    t.string "picture"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name"
     t.string "email"
