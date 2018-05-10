@@ -22,7 +22,7 @@ RSpec.feature 'Summaries', type: :feature do
   describe 'click delete link' do
     before do
       1.upto(1) do |row|
-        p FactoryGirl.create(:summary, time_limit: Date.today + row.hour)
+        FactoryGirl.create(:summary, time_limit: Date.today + row.hour)
       end
     end
     it 'task delete' do
