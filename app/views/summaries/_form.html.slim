@@ -1,20 +1,28 @@
-= form_for @tasks do |f|
- dt = f.label :タスク名
- dt = f.text_field :task_name
+- if @tasks.errors.any?
+  - @tasks.errors.full_messages.each do |message|
+    p = message
 
- dt = f.label :ラベル
+= form_for @tasks do |f|
+
+ dt = Summary.human_attribute_name :task_name
+ dt = f.text_field :task_name
+ #human
+
+ dt = Summary.human_attribute_name :label
  dt = f.text_field :label
 
- dt = f.label :期限
+ dt = Summary.human_attribute_name :time_limit
  dt = f.datetime_field :time_limit
 
- dt = f.label :内容
+ dt = Summary.human_attribute_name :contents
  dt = f.text_area :contents
 
- dt = f.label :ステータス
- dt = f.select :status, [['未着手'],['着手中'],['完了']]
+ dt = Summary.human_attribute_name :status
+ dt = f.select :status, [[t('activerecord.attributes.select.non_start')],
+                        [t('activerecord.attributes.select.under_start')],
+                        [t('activerecord.attributes.select.completion')]]
 
- dt = f.label :優先度
- dt = f.select :priority, [['最高'],['高'],['中'],['低']]
+ dt = Summary.human_attribute_name :priority
+ dt = f.select :priority, [['4'],['3'],['2'],['1']]
 
- dt = f.submit :登録
+ dt = f.submit t('activerecord.attributes.formalities.creat')

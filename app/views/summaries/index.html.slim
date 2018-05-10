@@ -1,25 +1,23 @@
 -if flash[:notice]
   = flash[:notice]
 
-h1
-  | しあわせ一覧
-h2
-  | 現在のしあわせ一覧
+h1 = t('activerecord.attributes.view.index_header')
+h2 = t('activerecord.attributes.view.index_sub')
+
 table
-  tr
-    / th id
-    th タスク名
-    th ラベル
-    th 内容
-    th 優先度
-    th ステータス
-    th 期限
-    th 作成日
+  thead
+    tr
+      th = Summary.human_attribute_name :task_name
+      th = Summary.human_attribute_name :label
+      th = Summary.human_attribute_name :contents
+      th = sortable 'priority', t('activerecord.attributes.summary.priority')
+      th = Summary.human_attribute_name :status
+      th = sortable 'time_limit', t('activerecord.attributes.summary.time_limit')
+      th = sortable 'created_at', t('activerecord.attributes.summary.created_at')
 
   tbody
     - @tasks.each do |task|
       tr
-        / td = task.id
         td = task.task_name
         td = task.label
         td = task.contents
@@ -27,7 +25,7 @@ table
         td = task.status
         td = task.time_limit
         td = task.created_at
-        td = link_to '編集', edit_summary_path(task.id), id: 'edit_id'
-        td = link_to '削除', summary_path(task.id), method: :delete, id: 'delete_id'
+        td = link_to t('activerecord.attributes.link.edit'), edit_summary_path(task.id), id: 'edit_id'
+        td = link_to t('activerecord.attributes.formalities.delete'), summary_path(task.id), method: :delete, id: 'delete_id'
 br
-= link_to '新規登録', new_summary_path
+= link_to t('activerecord.attributes.link.new'), new_summary_path
