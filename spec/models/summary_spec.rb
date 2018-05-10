@@ -7,12 +7,13 @@ RSpec.describe Summary, type: :model do
       task.valid?
       expect(task.errors[:task_name]).to include('を入力してください')
     end
+  end
 
   describe 'input limit exceeded' do
     it 'task_name' do
-      task = FactoryGirl.build(:summary, task_name: 'kasdfiaosdnaogasdavfd')
+      task = FactoryGirl.build(:summary, task_name: 'kasdfiaosdnafdaefdsadfasdfogasdsafaavfd')
       task.valid?
-      expect(task.errors[:task_name]).to include('は20文字以内で入力してください')
+      expect(task.errors[:task_name]).to include('は25文字以内で入力してください')
     end
   end
 end

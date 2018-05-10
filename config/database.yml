@@ -28,8 +28,5 @@ test:
   database: task_manage_test
 
 production:
-  <<: *default
-#  database: db/production.sqlite3
-  database: task_manage_production
-  username: task_manage
-  password: <%= ENV['APPNAME_DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  encoding: utf8

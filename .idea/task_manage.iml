@@ -220,14 +220,14 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="capybara (vbundled(3.0.2)) [path][gem]">
+      <library name="capybara (vbundled(3.0.3)) [path][gem]">
         <CLASSES>
-          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/capybara-3.0.2/.yard" />
-          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/capybara-3.0.2/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/capybara-3.0.3/.yard" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/capybara-3.0.3/lib" />
         </CLASSES>
         <SOURCES>
-          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/capybara-3.0.2/.yard" />
-          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/capybara-3.0.2/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/capybara-3.0.3/.yard" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/capybara-3.0.3/lib" />
         </SOURCES>
       </library>
     </orderEntry>
@@ -1088,12 +1088,12 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="web-console (vbundled(3.6.1)) [path][gem]">
+      <library name="web-console (vbundled(3.6.2)) [path][gem]">
         <CLASSES>
-          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/web-console-3.6.1/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/web-console-3.6.2/lib" />
         </CLASSES>
         <SOURCES>
-          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/web-console-3.6.1/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/web-console-3.6.2/lib" />
         </SOURCES>
       </library>
     </orderEntry>
