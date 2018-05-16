@@ -2,24 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d65e6f7f-027a-4242-8c47-02ff95d72d62" name="デフォルト" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/task_manage.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/task_manage.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/summaries.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/summaries.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/summaries_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/summaries_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/summary.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/summary.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.slim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/summaries/_form.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/summaries/_form.html.slim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/summaries/edit.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/summaries/edit.html.slim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/summaries/index.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/summaries/index.html.slim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/summaries/new.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/summaries/new.html.slim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/summaries/show.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/summaries/show.html.slim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/locales/ja.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/locales/ja.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/features/summaries_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/features/summaries_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/models/summary_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/models/summary_spec.rb" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -73,8 +56,26 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="user.rb" pinned="false" current-in-tab="true">
+          <file leaf-file-name="user.rb" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="30">
+                  <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="form_tag_helper.rb" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/vendor/bundle/ruby/2.5.0/gems/actionview-5.2.0/lib/action_view/helpers/form_tag_helper.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="293">
+                  <caret line="685" column="28" selection-start-line="685" selection-start-column="10" selection-end-line="685" selection-end-column="28" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="20180420074421_create_users.rb" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/db/migrate/20180420074421_create_users.rb">
               <provider selected="true" editor-type-id="text-editor" />
             </entry>
           </file>
@@ -117,8 +118,8 @@
           <file leaf-file-name="_form.html.slim" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/views/summaries/_form.html.slim">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="540">
-                  <caret line="36" column="52" lean-forward="true" selection-start-line="36" selection-start-column="52" selection-end-line="36" selection-end-column="52" />
+                <state relative-caret-position="190">
+                  <caret line="24" column="68" selection-start-line="24" selection-start-column="68" selection-end-line="24" selection-end-column="68" />
                   <folding>
                     <element signature="e#1661#1707#0" expanded="true" />
                     <element signature="e#2329#2369#0" expanded="true" />
@@ -256,13 +257,13 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.slim" />
-        <option value="$PROJECT_DIR$/vendor/bundle/ruby/2.5.0/gems/actionview-5.2.0/lib/action_view/helpers/form_tag_helper.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/summaries.scss" />
         <option value="$PROJECT_DIR$/app/views/summaries/index.html.slim" />
-        <option value="$PROJECT_DIR$/app/views/summaries/_form.html.slim" />
         <option value="$PROJECT_DIR$/config/locales/ja.yml" />
         <option value="$PROJECT_DIR$/app/controllers/summaries_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/summary.rb" />
+        <option value="$PROJECT_DIR$/vendor/bundle/ruby/2.5.0/gems/actionview-5.2.0/lib/action_view/helpers/form_tag_helper.rb" />
+        <option value="$PROJECT_DIR$/app/views/summaries/_form.html.slim" />
       </list>
     </option>
   </component>
@@ -379,23 +380,6 @@
             <path>
               <item name="task_manage" type="b2602c69:ProjectViewProjectNode" />
               <item name="task_manage" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="task_manage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="task_manage" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-              <item name="initializers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="task_manage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="task_manage" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-              <item name="locales" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="task_manage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="task_manage" type="462c0819:PsiDirectoryNode" />
               <item name="db" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -403,34 +387,6 @@
               <item name="task_manage" type="462c0819:PsiDirectoryNode" />
               <item name="db" type="462c0819:PsiDirectoryNode" />
               <item name="migrate" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="task_manage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="task_manage" type="462c0819:PsiDirectoryNode" />
-              <item name="spec" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="task_manage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="task_manage" type="462c0819:PsiDirectoryNode" />
-              <item name="spec" type="462c0819:PsiDirectoryNode" />
-              <item name="factories" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="task_manage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="task_manage" type="462c0819:PsiDirectoryNode" />
-              <item name="spec" type="462c0819:PsiDirectoryNode" />
-              <item name="features" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="task_manage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="task_manage" type="462c0819:PsiDirectoryNode" />
-              <item name="spec" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="task_manage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="task_manage" type="462c0819:PsiDirectoryNode" />
-              <item name="tmp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="task_manage" type="b2602c69:ProjectViewProjectNode" />
@@ -915,12 +871,12 @@
       <workItem from="1524822126145" duration="87909000" />
       <workItem from="1525927228562" duration="11230000" />
       <workItem from="1525997512298" duration="17748000" />
-      <workItem from="1526256291951" duration="70263000" />
+      <workItem from="1526256291951" duration="71700000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="310805000" />
+    <option name="totallyTimeSpent" value="312242000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -987,13 +943,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/search/searchs.rb" />
     <entry file="file://$PROJECT_DIR$/app/models/search/base.rb" />
     <entry file="file://$PROJECT_DIR$/db/migrate/20180423065656_create_summaries.rb">
@@ -1202,13 +1151,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/bundle/ruby/2.5.0/gems/actionview-5.2.0/lib/action_view/helpers/form_tag_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="694" column="55" lean-forward="true" selection-start-line="694" selection-start-column="55" selection-end-line="694" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/bundle/ruby/2.5.0/gems/bootstrap-sass-3.3.7/lib/bootstrap-sass.rb">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1323,17 +1265,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/summaries/_form.html.slim">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="52" lean-forward="true" selection-start-line="36" selection-start-column="52" selection-end-line="36" selection-end-column="52" />
-          <folding>
-            <element signature="e#1661#1707#0" expanded="true" />
-            <element signature="e#2329#2369#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/summary.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -1341,8 +1272,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20180420074421_create_users.rb">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/bundle/ruby/2.5.0/gems/actionview-5.2.0/lib/action_view/helpers/form_tag_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="685" column="28" selection-start-line="685" selection-start-column="10" selection-end-line="685" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/summaries/_form.html.slim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="24" column="68" selection-start-line="24" selection-start-column="68" selection-end-line="24" selection-end-column="68" />
+          <folding>
+            <element signature="e#1661#1707#0" expanded="true" />
+            <element signature="e#2329#2369#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
