@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d65e6f7f-027a-4242-8c47-02ff95d72d62" name="デフォルト" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/summaries/_form.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/summaries/_form.html.slim" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -118,8 +118,8 @@
           <file leaf-file-name="_form.html.slim" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/views/summaries/_form.html.slim">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="526">
-                  <caret line="36" column="52" lean-forward="true" selection-start-line="36" selection-start-column="52" selection-end-line="36" selection-end-column="52" />
+                <state relative-caret-position="190">
+                  <caret line="24" column="68" selection-start-line="24" selection-start-column="68" selection-end-line="24" selection-end-column="68" />
                   <folding>
                     <element signature="e#1661#1707#0" expanded="true" />
                     <element signature="e#2329#2369#0" expanded="true" />
@@ -259,11 +259,11 @@
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.slim" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/summaries.scss" />
         <option value="$PROJECT_DIR$/app/views/summaries/index.html.slim" />
-        <option value="$PROJECT_DIR$/app/views/summaries/_form.html.slim" />
         <option value="$PROJECT_DIR$/config/locales/ja.yml" />
         <option value="$PROJECT_DIR$/app/controllers/summaries_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/summary.rb" />
         <option value="$PROJECT_DIR$/vendor/bundle/ruby/2.5.0/gems/actionview-5.2.0/lib/action_view/helpers/form_tag_helper.rb" />
+        <option value="$PROJECT_DIR$/app/views/summaries/_form.html.slim" />
       </list>
     </option>
   </component>
@@ -871,12 +871,12 @@
       <workItem from="1524822126145" duration="87909000" />
       <workItem from="1525927228562" duration="11230000" />
       <workItem from="1525997512298" duration="17748000" />
-      <workItem from="1526256291951" duration="71356000" />
+      <workItem from="1526256291951" duration="71700000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="311898000" />
+    <option name="totallyTimeSpent" value="312242000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -889,7 +889,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="-180" width="1920" height="1080" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49893504" weight="0.3283582" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5063898" side_tool="true" weight="0.3472637" />
@@ -1266,17 +1265,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/summaries/_form.html.slim">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="36" column="52" lean-forward="true" selection-start-line="36" selection-start-column="52" selection-end-line="36" selection-end-column="52" />
-          <folding>
-            <element signature="e#1661#1707#0" expanded="true" />
-            <element signature="e#2329#2369#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/summary.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -1298,6 +1286,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="293">
           <caret line="685" column="28" selection-start-line="685" selection-start-column="10" selection-end-line="685" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/summaries/_form.html.slim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="24" column="68" selection-start-line="24" selection-start-column="68" selection-end-line="24" selection-end-column="68" />
+          <folding>
+            <element signature="e#1661#1707#0" expanded="true" />
+            <element signature="e#2329#2369#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

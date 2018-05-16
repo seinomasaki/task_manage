@@ -23,9 +23,6 @@ div.container
               span class="label label-default mr10" 任意
               = Summary.human_attribute_name :time_limit
             dt = f.datetime_field :time_limit, class: "form-control"
-            / vendor/bundle/ruby/2.5.0/gems/actionview-5.2.0/lib/action_view/helpers/tags/form_tag_helper.rb
-              det datetime_field_tag(686~688)をコメントアウト
-              optionで未入力時にメッセージが自動で出るため
           .row.col-sm-12.form-control-static
             label
               span class="label label-default mr10" 任意
