@@ -4,12 +4,11 @@ ja:
 
     attributes:
       summary:
-        task_name: タスク
-        title: タスク
+        task_name: タスク名
         label: ラベル
         contents: 内容
         time_limit: 期限
-        status: ステータス
+        status: 着手状況
         priority: 優先度
         created_at: 作成日
 
@@ -17,6 +16,8 @@ ja:
         index: 一覧
         new: 新規作成
         edit: 編集
+        search: 検索
+        cansel: キャンセル
 
       formalities:
         creat: 登録
@@ -30,9 +31,9 @@ ja:
       view:
         index_header: しあわせ一覧
         index_sub: 現在のしあわせ一覧
-        new: task新規作成
-        edit: task編集
-        show: task情報
+        new: 新規作成
+        edit: 編集
+        show: 詳細情報
 
       flash:
         create: タスクを作成しました。

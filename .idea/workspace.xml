@@ -3,7 +3,21 @@
   <component name="ChangeListManager">
     <list default="true" id="d65e6f7f-027a-4242-8c47-02ff95d72d62" name="デフォルト" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/task_manage.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/task_manage.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/summaries.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/summaries.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/summaries_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/summaries_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/summary.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/summary.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.slim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/summaries/_form.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/summaries/_form.html.slim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/summaries/edit.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/summaries/edit.html.slim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/summaries/index.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/summaries/index.html.slim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/summaries/new.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/summaries/new.html.slim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/summaries/show.html.slim" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/summaries/show.html.slim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/locales/ja.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/locales/ja.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spec/features/summaries_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/features/summaries_spec.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spec/models/summary_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/models/summary_spec.rb" afterDir="false" />
     </list>
@@ -21,8 +35,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/task_manage@Production__task_manage.rcov" NAME="Production: task_manage Coverage Results" MODIFIED="1524544351025" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="task_manage" />
-    <SUITE FILE_PATH="coverage/task_manage@Development__task_manage.rcov" NAME="Development: task_manage Coverage Results" MODIFIED="1525927349605" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="task_manage" />
+    <SUITE FILE_PATH="coverage/task_manage@Production__task_manage.rcov" NAME="Production: task_manage Coverage Results" MODIFIED="1525928752183" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="task_manage" />
+    <SUITE FILE_PATH="coverage/task_manage@Development__task_manage.rcov" NAME="Development: task_manage Coverage Results" MODIFIED="1526430183425" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="task_manage" />
     <SUITE FILE_PATH="coverage/task_manage@routes.rcov" NAME="routes Coverage Results" MODIFIED="1524637905062" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/config" MODULE_NAME="task_manage" />
   </component>
   <component name="FavoritesManager">
@@ -32,38 +46,43 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="summary.rb" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/models/summary.rb">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="30">
-                  <caret line="2" column="45" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="summary_spec.rb" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/spec/models/summary_spec.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="270">
-                  <caret line="18" column="3" lean-forward="true" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
+                <state relative-caret-position="585">
+                  <caret line="39" column="33" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="33" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="summaries.rb" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/spec/factories/summaries.rb">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="135">
-                  <caret line="9" column="3" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="summaries_spec.rb" pinned="false" current-in-tab="true">
+          <file leaf-file-name="summaries_spec.rb" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/spec/features/summaries_spec.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-159">
-                  <caret line="31" column="41" lean-forward="true" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
+                <state relative-caret-position="870">
+                  <caret line="58" column="79" selection-start-line="58" selection-start-column="69" selection-end-line="58" selection-end-column="79" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="summary.rb" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/models/summary.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="75">
+                  <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="user.rb" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+              <provider selected="true" editor-type-id="text-editor" />
+            </entry>
+          </file>
+          <file leaf-file-name="application_controller.rb" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="105">
+                  <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
                 </state>
               </provider>
             </entry>
@@ -71,12 +90,12 @@
           <file leaf-file-name="summaries_controller.rb" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/controllers/summaries_controller.rb">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-14">
-                  <caret column="29" selection-start-column="29" selection-end-column="29" />
+                <state relative-caret-position="135">
+                  <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
                   <folding>
-                    <element signature="e#420#461#0" expanded="true" />
-                    <element signature="e#618#660#0" expanded="true" />
-                    <element signature="e#770#811#0" expanded="true" />
+                    <element signature="e#505#546#0" expanded="true" />
+                    <element signature="e#755#797#0" expanded="true" />
+                    <element signature="e#960#1001#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -85,8 +104,8 @@
           <file leaf-file-name="ja.yml" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/config/locales/ja.yml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="960">
-                  <caret line="64" column="38" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="38" />
+                <state relative-caret-position="524">
+                  <caret line="35" column="16" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
                 </state>
               </provider>
             </entry>
@@ -95,29 +114,34 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="application.rb" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/config/application.rb">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="345">
-                  <caret line="23" selection-start-line="23" selection-end-line="23" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="_form.html.slim" pinned="false" current-in-tab="false">
+          <file leaf-file-name="_form.html.slim" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/views/summaries/_form.html.slim">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="195">
-                  <caret line="13" column="46" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
+                <state relative-caret-position="540">
+                  <caret line="36" column="52" lean-forward="true" selection-start-line="36" selection-start-column="52" selection-end-line="36" selection-end-column="52" />
+                  <folding>
+                    <element signature="e#1661#1707#0" expanded="true" />
+                    <element signature="e#2329#2369#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="index.html.slim" pinned="false" current-in-tab="true">
+          <file leaf-file-name="index.html.slim" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/views/summaries/index.html.slim">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="450">
-                  <caret line="30" column="41" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
+                <state relative-caret-position="795">
+                  <caret line="56" column="118" lean-forward="true" selection-start-line="56" selection-start-column="15" selection-end-line="56" selection-end-column="118" />
+                  <folding>
+                    <element signature="e#85#136#1" expanded="true" />
+                    <element signature="e#144#192#1" expanded="true" />
+                    <element signature="e#1012#1049#0" expanded="true" />
+                    <element signature="e#1324#1369#0" expanded="true" />
+                    <element signature="e#1456#1503#0" expanded="true" />
+                    <element signature="e#1540#1587#0" expanded="true" />
+                    <element signature="e#2519#2557#0" expanded="true" />
+                    <element signature="e#2657#2704#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -125,10 +149,20 @@
           <file leaf-file-name="new.html.slim" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/views/summaries/new.html.slim">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="15">
-                  <caret line="1" selection-start-line="1" selection-end-line="1" />
+                <state relative-caret-position="45">
+                  <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="show.html.slim" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/views/summaries/show.html.slim">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="135">
+                  <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
                   <folding>
-                    <element signature="e#5#47#1" expanded="true" />
+                    <element signature="e#1077#1121#0" expanded="true" />
+                    <element signature="e#1188#1231#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -137,32 +171,17 @@
           <file leaf-file-name="edit.html.slim" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/views/summaries/edit.html.slim">
               <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret column="48" selection-start-column="48" selection-end-column="48" />
-                  <folding>
-                    <element signature="e#5#48#1" expanded="true" />
-                  </folding>
+                <state relative-caret-position="45">
+                  <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="show.html.slim" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/views/summaries/show.html.slim">
+          <file leaf-file-name="summaries.scss" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/summaries.scss">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="390">
-                  <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
-                  <folding>
-                    <element signature="e#5#48#1" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="_flash.html.slim" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/views/summaries/_flash.html.slim">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="30">
-                  <caret line="2" column="47" selection-start-line="2" selection-start-column="47" selection-end-line="2" selection-end-column="47" />
+                  <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
                 </state>
               </provider>
             </entry>
@@ -176,6 +195,12 @@
       <find>pg</find>
       <find>class FailedExampleNotification</find>
       <find>ExampleNotification</find>
+      <find>span</find>
+      <find>datetime_field</find>
+      <find>datetime_local</find>
+      <find>datetime-local</find>
+      <find>confirm</find>
+      <find>log</find>
     </findStrings>
   </component>
   <component name="GeneratorOptions">
@@ -187,18 +212,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/views/tasks/new.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/tasks/edit.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/tasks/show.html.erb" />
-        <option value="$PROJECT_DIR$/test/system/tasks_test.rb" />
-        <option value="$PROJECT_DIR$/test/controllers/tasks_controller_test.rb" />
-        <option value="$PROJECT_DIR$/app/views/tasks/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/tasks/_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/summaries/summary.html.erb" />
         <option value="$PROJECT_DIR$/app/views/entries/entry.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/entries_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/tasks_controller.rb" />
-        <option value="$PROJECT_DIR$/config/database.yml" />
         <option value="$PROJECT_DIR$/config/initializers/time_formats.rb" />
         <option value="$PROJECT_DIR$/app/views/summaries/summary.html.slim" />
         <option value="$PROJECT_DIR$/app/views/summaries/create.html.slim" />
@@ -209,31 +225,44 @@
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/summaries/_flash.html.slim" />
         <option value="$PROJECT_DIR$/spec/spec_helper.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20180423065656_create_summaries.rb" />
         <option value="$PROJECT_DIR$/spec/factories/tasks.rb" />
         <option value="$PROJECT_DIR$/spec/features/tasks_spec.rb" />
         <option value="$PROJECT_DIR$/spec/rails_helper.rb" />
         <option value="$PROJECT_DIR$/spec/controller/summaries_controller_spec.rb" />
         <option value="$PROJECT_DIR$/app/models/application_record.rb" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/config/locales/en.yml" />
         <option value="$PROJECT_DIR$/config/locales/view/ja.yml" />
         <option value="$PROJECT_DIR$/config/application.rb" />
         <option value="$PROJECT_DIR$/app/helpers/summaries_helper.rb" />
         <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/db/schema.rb" />
-        <option value="$PROJECT_DIR$/config/locales/ja.yml" />
+        <option value="$PROJECT_DIR$/spec/factories/summaries.rb" />
+        <option value="$PROJECT_DIR$/config/database.yml" />
+        <option value="$PROJECT_DIR$/db/migrate/20180423065656_create_summaries.rb" />
+        <option value="$PROJECT_DIR$/app/models/search/base.rb" />
+        <option value="$PROJECT_DIR$/app/models/search/searchs.rb" />
+        <option value="$PROJECT_DIR$/spec/features/summaries_spec.rb" />
+        <option value="$PROJECT_DIR$/spec/models/summary_spec.rb" />
         <option value="$PROJECT_DIR$/app/views/summaries/new.html.slim" />
         <option value="$PROJECT_DIR$/app/views/summaries/edit.html.slim" />
+        <option value="$PROJECT_DIR$/app/views/kaminari/_prev_page.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/kaminari/_gap.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/kaminari/_page.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/kaminari/_paginator.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/kaminari/_next_page.html.erb" />
         <option value="$PROJECT_DIR$/app/views/summaries/show.html.slim" />
-        <option value="$PROJECT_DIR$/app/controllers/summaries_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/summaries/_form.html.slim" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.slim" />
+        <option value="$PROJECT_DIR$/vendor/bundle/ruby/2.5.0/gems/actionview-5.2.0/lib/action_view/helpers/form_tag_helper.rb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/summaries.scss" />
         <option value="$PROJECT_DIR$/app/views/summaries/index.html.slim" />
-        <option value="$PROJECT_DIR$/spec/factories/summaries.rb" />
+        <option value="$PROJECT_DIR$/app/views/summaries/_form.html.slim" />
+        <option value="$PROJECT_DIR$/config/locales/ja.yml" />
+        <option value="$PROJECT_DIR$/app/controllers/summaries_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/summary.rb" />
-        <option value="$PROJECT_DIR$/spec/models/summary_spec.rb" />
-        <option value="$PROJECT_DIR$/spec/features/summaries_spec.rb" />
       </list>
     </option>
   </component>
@@ -268,8 +297,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="RailsProjectView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -281,6 +310,33 @@
               <item name="task_manage" type="b2602c69:ProjectViewProjectNode" />
               <item name="task_manage" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="task_manage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="task_manage" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="task_manage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="task_manage" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="task_manage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="task_manage" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="javascripts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="task_manage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="task_manage" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="stylesheets" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="task_manage" type="b2602c69:ProjectViewProjectNode" />
@@ -311,12 +367,25 @@
               <item name="task_manage" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="layouts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="task_manage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="task_manage" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="summaries" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="task_manage" type="b2602c69:ProjectViewProjectNode" />
               <item name="task_manage" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="task_manage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="task_manage" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="initializers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="task_manage" type="b2602c69:ProjectViewProjectNode" />
@@ -363,6 +432,308 @@
               <item name="task_manage" type="462c0819:PsiDirectoryNode" />
               <item name="tmp" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="task_manage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="task_manage" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="task_manage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="task_manage" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="bundle" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="task_manage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="task_manage" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="bundle" type="462c0819:PsiDirectoryNode" />
+              <item name="ruby" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="task_manage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="task_manage" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="bundle" type="462c0819:PsiDirectoryNode" />
+              <item name="ruby" type="462c0819:PsiDirectoryNode" />
+              <item name="2.5.0" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="task_manage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="task_manage" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="bundle" type="462c0819:PsiDirectoryNode" />
+              <item name="ruby" type="462c0819:PsiDirectoryNode" />
+              <item name="2.5.0" type="462c0819:PsiDirectoryNode" />
+              <item name="gems" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="task_manage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="task_manage" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="bundle" type="462c0819:PsiDirectoryNode" />
+              <item name="ruby" type="462c0819:PsiDirectoryNode" />
+              <item name="2.5.0" type="462c0819:PsiDirectoryNode" />
+              <item name="gems" type="462c0819:PsiDirectoryNode" />
+              <item name="actionview-5.2.0" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="task_manage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="task_manage" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="bundle" type="462c0819:PsiDirectoryNode" />
+              <item name="ruby" type="462c0819:PsiDirectoryNode" />
+              <item name="2.5.0" type="462c0819:PsiDirectoryNode" />
+              <item name="gems" type="462c0819:PsiDirectoryNode" />
+              <item name="actionview-5.2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="task_manage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="task_manage" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="bundle" type="462c0819:PsiDirectoryNode" />
+              <item name="ruby" type="462c0819:PsiDirectoryNode" />
+              <item name="2.5.0" type="462c0819:PsiDirectoryNode" />
+              <item name="gems" type="462c0819:PsiDirectoryNode" />
+              <item name="actionview-5.2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="action_view" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="task_manage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="task_manage" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="bundle" type="462c0819:PsiDirectoryNode" />
+              <item name="ruby" type="462c0819:PsiDirectoryNode" />
+              <item name="2.5.0" type="462c0819:PsiDirectoryNode" />
+              <item name="gems" type="462c0819:PsiDirectoryNode" />
+              <item name="actionview-5.2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="action_view" type="462c0819:PsiDirectoryNode" />
+              <item name="helpers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="task_manage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="task_manage" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="bundle" type="462c0819:PsiDirectoryNode" />
+              <item name="ruby" type="462c0819:PsiDirectoryNode" />
+              <item name="2.5.0" type="462c0819:PsiDirectoryNode" />
+              <item name="gems" type="462c0819:PsiDirectoryNode" />
+              <item name="activemodel-5.2.0" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="task_manage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="task_manage" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="bundle" type="462c0819:PsiDirectoryNode" />
+              <item name="ruby" type="462c0819:PsiDirectoryNode" />
+              <item name="2.5.0" type="462c0819:PsiDirectoryNode" />
+              <item name="gems" type="462c0819:PsiDirectoryNode" />
+              <item name="activemodel-5.2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="task_manage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="task_manage" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="bundle" type="462c0819:PsiDirectoryNode" />
+              <item name="ruby" type="462c0819:PsiDirectoryNode" />
+              <item name="2.5.0" type="462c0819:PsiDirectoryNode" />
+              <item name="gems" type="462c0819:PsiDirectoryNode" />
+              <item name="activemodel-5.2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="active_model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="task_manage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="task_manage" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="bundle" type="462c0819:PsiDirectoryNode" />
+              <item name="ruby" type="462c0819:PsiDirectoryNode" />
+              <item name="2.5.0" type="462c0819:PsiDirectoryNode" />
+              <item name="gems" type="462c0819:PsiDirectoryNode" />
+              <item name="activemodel-5.2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="active_model" type="462c0819:PsiDirectoryNode" />
+              <item name="validations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="task_manage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="task_manage" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="bundle" type="462c0819:PsiDirectoryNode" />
+              <item name="ruby" type="462c0819:PsiDirectoryNode" />
+              <item name="2.5.0" type="462c0819:PsiDirectoryNode" />
+              <item name="gems" type="462c0819:PsiDirectoryNode" />
+              <item name="bootstrap-4.1.1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="task_manage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="task_manage" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="bundle" type="462c0819:PsiDirectoryNode" />
+              <item name="ruby" type="462c0819:PsiDirectoryNode" />
+              <item name="2.5.0" type="462c0819:PsiDirectoryNode" />
+              <item name="gems" type="462c0819:PsiDirectoryNode" />
+              <item name="bootstrap-4.1.1" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="task_manage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="task_manage" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="bundle" type="462c0819:PsiDirectoryNode" />
+              <item name="ruby" type="462c0819:PsiDirectoryNode" />
+              <item name="2.5.0" type="462c0819:PsiDirectoryNode" />
+              <item name="gems" type="462c0819:PsiDirectoryNode" />
+              <item name="bootstrap-4.1.1" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="task_manage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="task_manage" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="bundle" type="462c0819:PsiDirectoryNode" />
+              <item name="ruby" type="462c0819:PsiDirectoryNode" />
+              <item name="2.5.0" type="462c0819:PsiDirectoryNode" />
+              <item name="gems" type="462c0819:PsiDirectoryNode" />
+              <item name="bootstrap-sass-3.3.7" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="task_manage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="task_manage" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="bundle" type="462c0819:PsiDirectoryNode" />
+              <item name="ruby" type="462c0819:PsiDirectoryNode" />
+              <item name="2.5.0" type="462c0819:PsiDirectoryNode" />
+              <item name="gems" type="462c0819:PsiDirectoryNode" />
+              <item name="bootstrap-sass-3.3.7" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="task_manage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="task_manage" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="bundle" type="462c0819:PsiDirectoryNode" />
+              <item name="ruby" type="462c0819:PsiDirectoryNode" />
+              <item name="2.5.0" type="462c0819:PsiDirectoryNode" />
+              <item name="gems" type="462c0819:PsiDirectoryNode" />
+              <item name="capybara-3.0.3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="task_manage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="task_manage" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="bundle" type="462c0819:PsiDirectoryNode" />
+              <item name="ruby" type="462c0819:PsiDirectoryNode" />
+              <item name="2.5.0" type="462c0819:PsiDirectoryNode" />
+              <item name="gems" type="462c0819:PsiDirectoryNode" />
+              <item name="capybara-3.0.3" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="task_manage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="task_manage" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="bundle" type="462c0819:PsiDirectoryNode" />
+              <item name="ruby" type="462c0819:PsiDirectoryNode" />
+              <item name="2.5.0" type="462c0819:PsiDirectoryNode" />
+              <item name="gems" type="462c0819:PsiDirectoryNode" />
+              <item name="i18n-1.0.1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="task_manage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="task_manage" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="bundle" type="462c0819:PsiDirectoryNode" />
+              <item name="ruby" type="462c0819:PsiDirectoryNode" />
+              <item name="2.5.0" type="462c0819:PsiDirectoryNode" />
+              <item name="gems" type="462c0819:PsiDirectoryNode" />
+              <item name="i18n-1.0.1" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="task_manage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="task_manage" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="bundle" type="462c0819:PsiDirectoryNode" />
+              <item name="ruby" type="462c0819:PsiDirectoryNode" />
+              <item name="2.5.0" type="462c0819:PsiDirectoryNode" />
+              <item name="gems" type="462c0819:PsiDirectoryNode" />
+              <item name="railties-5.2.0" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="task_manage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="task_manage" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="bundle" type="462c0819:PsiDirectoryNode" />
+              <item name="ruby" type="462c0819:PsiDirectoryNode" />
+              <item name="2.5.0" type="462c0819:PsiDirectoryNode" />
+              <item name="gems" type="462c0819:PsiDirectoryNode" />
+              <item name="railties-5.2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="task_manage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="task_manage" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="bundle" type="462c0819:PsiDirectoryNode" />
+              <item name="ruby" type="462c0819:PsiDirectoryNode" />
+              <item name="2.5.0" type="462c0819:PsiDirectoryNode" />
+              <item name="gems" type="462c0819:PsiDirectoryNode" />
+              <item name="railties-5.2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="rails" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="task_manage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="task_manage" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="bundle" type="462c0819:PsiDirectoryNode" />
+              <item name="ruby" type="462c0819:PsiDirectoryNode" />
+              <item name="2.5.0" type="462c0819:PsiDirectoryNode" />
+              <item name="gems" type="462c0819:PsiDirectoryNode" />
+              <item name="railties-5.2.0" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="rails" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="task_manage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="task_manage" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="bundle" type="462c0819:PsiDirectoryNode" />
+              <item name="ruby" type="462c0819:PsiDirectoryNode" />
+              <item name="2.5.0" type="462c0819:PsiDirectoryNode" />
+              <item name="gems" type="462c0819:PsiDirectoryNode" />
+              <item name="tzinfo-1.2.5" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="task_manage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="task_manage" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="bundle" type="462c0819:PsiDirectoryNode" />
+              <item name="ruby" type="462c0819:PsiDirectoryNode" />
+              <item name="2.5.0" type="462c0819:PsiDirectoryNode" />
+              <item name="gems" type="462c0819:PsiDirectoryNode" />
+              <item name="tzinfo-1.2.5" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="task_manage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="task_manage" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="bundle" type="462c0819:PsiDirectoryNode" />
+              <item name="ruby" type="462c0819:PsiDirectoryNode" />
+              <item name="2.5.0" type="462c0819:PsiDirectoryNode" />
+              <item name="gems" type="462c0819:PsiDirectoryNode" />
+              <item name="tzinfo-1.2.5" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="tzinfo" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -371,20 +742,20 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RailsGeneratorsPopup.hiddenIncluded" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="my.cnf&#9;null&#9;null&#10;./lib/rails/application/co&#9;FILE&#9;file:///Users/masaki/Desktop/task_manage/vendor/bundle/ruby/2.5.0/gems/railties-5.2.0/lib/rails/application/configuration.rb&#10;configuration&#9;null&#9;null&#10;ExampleNotification&#9;null&#9;null&#10;FailedExampleNotification &#9;null&#9;null&#10;rspec/rails&#9;FILE&#9;file:///Users/masaki/Desktop/task_manage/vendor/bundle/ruby/2.5.0/gems/rspec-rails-3.7.2/lib/rspec/rails.rb" />
+    <property name="SearchEverywhereHistoryKey" value="modal&#9;null&#9;null&#10;confirm&#9;null&#9;null&#10;bootstrap&#9;null&#9;null&#10;boots&#9;FILE&#9;file:///Users/masaki/Desktop/task_manage/vendor/bundle/ruby/2.5.0/gems/bootstrap-sass-3.3.7/lib/bootstrap-sass.rb&#10;form_tag&#9;FILE&#9;file:///Users/masaki/Desktop/task_manage/vendor/bundle/ruby/2.5.0/gems/actionview-5.2.0/lib/action_view/helpers/form_tag_helper.rb&#10;datatime&#9;null&#9;null&#10;bootstra&#9;null&#9;null&#10;my.cnf&#9;null&#9;null&#10;./lib/rails/application/co&#9;FILE&#9;file:///Users/masaki/Desktop/task_manage/vendor/bundle/ruby/2.5.0/gems/railties-5.2.0/lib/rails/application/configuration.rb&#10;configuration&#9;null&#9;null&#10;ExampleNotification&#9;null&#9;null&#10;FailedExampleNotification &#9;null&#9;null&#10;rspec/rails&#9;FILE&#9;file:///Users/masaki/Desktop/task_manage/vendor/bundle/ruby/2.5.0/gems/rspec-rails-3.7.2/lib/rspec/rails.rb" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="org.jetbrains.plugins.ruby.i18n.inspection.quickfixes.I18nCreatePropertyDialog" value="en.yml" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/views" />
-      <recent name="$PROJECT_DIR$/tmp/pids" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/config/locales" />
       <recent name="$PROJECT_DIR$/config/locales/view" />
       <recent name="$PROJECT_DIR$/app/views/summaries" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/views" />
+      <recent name="$PROJECT_DIR$/tmp/pids" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -542,12 +913,14 @@
       <workItem from="1524533606598" duration="44487000" />
       <workItem from="1524644978437" duration="39563000" />
       <workItem from="1524822126145" duration="87909000" />
-      <workItem from="1525927228562" duration="290000" />
+      <workItem from="1525927228562" duration="11230000" />
+      <workItem from="1525997512298" duration="17748000" />
+      <workItem from="1526256291951" duration="70263000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="211854000" />
+    <option name="totallyTimeSpent" value="310805000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -562,18 +935,18 @@
     <frame x="1440" y="-180" width="1920" height="1080" extended-state="0" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49893504" weight="0.3283582" />
-      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.45101172" side_tool="true" weight="0.3522388" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5063898" side_tool="true" weight="0.3472637" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.50692225" side_tool="true" visible="true" weight="0.3472637" />
       <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.4978701" weight="0.32916668" />
-      <window_info anchor="right" content_ui="combo" x="619" y="207" width="789" height="645" id="Routes" order="3" type="WINDOWED" weight="0.2113951" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.50479233" side_tool="true" visible="true" weight="0.35024875" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49520767" visible="true" weight="0.35024875" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5447531" weight="0.14749734" />
+      <window_info anchor="right" content_ui="combo" x="619" y="207" width="789" height="645" id="Routes" order="3" type="WINDOWED" visible="true" weight="0.2113951" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49307775" visible="true" weight="0.3472637" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5447531" visible="true" weight="0.17465389" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" sideWeight="0.4687023" side_tool="true" weight="0.14589989" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.52396166" weight="0.4" />
       <window_info id="Favorites" order="2" sideWeight="0.45524693" side_tool="true" weight="0.14589989" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.5244942" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -585,21 +958,21 @@
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5447531" visible="true" weight="0.14749734" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5447531" visible="true" weight="0.11235357" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5042598" side_tool="true" weight="0.35024875" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.50692225" side_tool="true" visible="true" weight="0.3472637" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" x="619" y="207" width="789" height="645" id="Routes" order="3" type="WINDOWED" weight="0.2113951" />
+      <window_info anchor="right" content_ui="combo" x="619" y="207" width="789" height="645" id="Routes" order="3" type="WINDOWED" visible="true" weight="0.2113951" />
       <window_info id="Structure" order="1" sideWeight="0.4687023" side_tool="true" weight="0.14589989" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49893504" weight="0.3283582" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4888179" weight="0.32636815" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.5244942" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.52396166" weight="0.4" />
       <window_info anchor="right" id="Database" order="4" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49574015" visible="true" weight="0.35024875" />
-      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.45101172" side_tool="true" weight="0.3522388" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49307775" visible="true" weight="0.3472637" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5063898" side_tool="true" weight="0.3472637" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.4978701" weight="0.32916668" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -614,171 +987,15 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/summaries/index.html.slim">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="41" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.ruby-version" />
-    <entry file="file://$PROJECT_DIR$/vendor/bundle/ruby/2.5.0/gems/puma-3.11.4/lib/puma/thread_pool.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="119" selection-start-line="119" selection-end-line="119" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/bundle/ruby/2.5.0/gems/puma-3.11.4/lib/puma/server.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="448" column="21" selection-start-line="448" selection-start-column="21" selection-end-line="448" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/summaries/entry.html.slim" />
-    <entry file="file://$PROJECT_DIR$/tmp/pids/server.pid">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/bundle/ruby/2.5.0/gems/activesupport-5.2.0/lib/active_support/lazy_load_hooks.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="76" column="22" lean-forward="true" selection-start-line="76" selection-start-column="22" selection-end-line="76" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/entries_controller.rb" />
-    <entry file="file://$PROJECT_DIR$/app/views/tasks/entry.html.slim" />
-    <entry file="file://$PROJECT_DIR$/app/models/entry.rb" />
-    <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="51" column="46" lean-forward="true" selection-start-line="51" selection-start-column="46" selection-end-line="51" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="82" column="83" selection-start-line="82" selection-start-column="83" selection-end-line="82" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/initializers/time_formats.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="45" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/bundle/ruby/2.5.0/gems/railties-5.2.0/lib/rails/application.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="523" column="43" lean-forward="true" selection-start-line="523" selection-start-column="43" selection-end-line="523" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/bundle/ruby/2.5.0/gems/rspec-rails-3.7.2/lib/rspec/rails.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/rails_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/bundle/ruby/2.5.0/gems/rspec-core-3.7.1/lib/rspec/core/notifications.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="50" column="7" selection-start-line="50" selection-start-column="7" selection-end-line="50" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/spec_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="34" column="71" lean-forward="true" selection-start-line="34" selection-start-column="71" selection-end-line="34" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20180420074421_create_users.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/controller/summaries_controller_spec.rb" />
-    <entry file="file://$PROJECT_DIR$/config/database.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="27" column="28" lean-forward="true" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/environment.rb">
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/bundle/ruby/2.5.0/gems/bootsnap-1.3.0/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/bundle/ruby/2.5.0/gems/railties-5.2.0/lib/rails/engine.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="588" selection-start-line="588" selection-end-line="588" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/bundle/ruby/2.5.0/gems/factory_girl-4.9.0/lib/factory_girl/configuration.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/bundle/ruby/2.5.0/gems/railties-5.2.0/lib/rails/application/configuration.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3553" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/application_record.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/locales/en.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="22" lean-forward="true" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/search/searchs.rb" />
+    <entry file="file://$PROJECT_DIR$/app/models/search/base.rb" />
     <entry file="file://$PROJECT_DIR$/db/migrate/20180423065656_create_summaries.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -786,10 +1003,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/summaries_helper.rb">
+    <entry file="file://$PROJECT_DIR$/db/schema.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="22" lean-forward="true" selection-start-column="22" selection-end-column="22" />
+        <state relative-caret-position="272">
+          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -800,68 +1017,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile.lock">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="58" column="20" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/summaries/_flash.html.slim">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="47" selection-start-line="2" selection-start-column="47" selection-end-line="2" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/summaries/edit.html.slim">
+    <entry file="file://$PROJECT_DIR$/app/helpers/summaries_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="48" selection-start-column="48" selection-end-column="48" />
-          <folding>
-            <element signature="e#5#48#1" expanded="true" />
-          </folding>
+          <caret column="22" lean-forward="true" selection-start-column="22" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/summaries/show.html.slim">
+    <entry file="file://$PROJECT_DIR$/config/database.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
-          <folding>
-            <element signature="e#5#48#1" expanded="true" />
-          </folding>
+        <state relative-caret-position="210">
+          <caret line="14" column="17" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/summaries/new.html.slim">
+    <entry file="file://$PROJECT_DIR$/config/boot.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-          <folding>
-            <element signature="e#5#47#1" expanded="true" />
-          </folding>
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/cable.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/mailer.text.slim">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/bundle/ruby/2.5.0/gems/bootstrap-4.1.1/lib/bootstrap/version.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="7" selection-start-column="7" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -872,57 +1058,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/summaries/_form.html.slim">
+    <entry file="file://$PROJECT_DIR$/app/views/kaminari/_gap.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="46" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
+        <state relative-caret-position="45">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/summaries/index.html.slim">
+    <entry file="file://$PROJECT_DIR$/app/views/kaminari/_last_page.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="41" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
+        <state relative-caret-position="45">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/locales/ja.yml">
+    <entry file="file://$PROJECT_DIR$/app/views/kaminari/_first_page.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="64" column="38" selection-start-line="64" selection-start-column="16" selection-end-line="64" selection-end-column="38" />
+        <state relative-caret-position="45">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/kaminari/_paginator.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="225">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/schema.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/kaminari/_page.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+        <state relative-caret-position="135">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/summary.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/kaminari/_prev_page.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="45" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
+        <state relative-caret-position="45">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/summaries_controller.rb">
+    <entry file="file://$PROJECT_DIR$/vendor/bundle/ruby/2.5.0/gems/i18n-1.0.1/lib/i18n.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-14">
-          <caret column="29" selection-start-column="29" selection-end-column="29" />
-          <folding>
-            <element signature="e#420#461#0" expanded="true" />
-            <element signature="e#618#660#0" expanded="true" />
-            <element signature="e#770#811#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-4955">
+          <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/bundle/ruby/2.5.0/gems/actionview-5.2.0/lib/action_view/helpers/translation_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="118" column="10" selection-start-line="118" selection-start-column="10" selection-end-line="118" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/kaminari/_next_page.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="45" lean-forward="true" selection-start-line="1" selection-start-column="45" selection-end-line="1" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/rubymine.jar!/resources/html5-schema/html5/block.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="244" column="16" selection-start-line="244" selection-start-column="16" selection-end-line="244" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -933,19 +1135,214 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/models/summary_spec.rb">
+    <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="3" lean-forward="true" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="51" column="18" selection-start-line="51" selection-end-line="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.slim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="11" lean-forward="true" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/initializers/time_formats.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="27" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/summaries/show.html.slim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+          <folding>
+            <element signature="e#1077#1121#0" expanded="true" />
+            <element signature="e#1188#1231#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/features/summaries_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-159">
-          <caret line="31" column="41" lean-forward="true" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
+        <state relative-caret-position="870">
+          <caret line="58" column="79" selection-start-line="58" selection-start-column="69" selection-end-line="58" selection-end-column="79" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/models/summary_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" column="33" selection-start-line="39" selection-start-column="33" selection-end-line="39" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/bundle/ruby/2.5.0/gems/tzinfo-1.2.5/lib/tzinfo/data_timezone.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="46" column="49" lean-forward="true" selection-start-line="46" selection-start-column="49" selection-end-line="46" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/bundle/ruby/2.5.0/gems/actionview-5.2.0/lib/action_view/helpers/form_tag_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="490">
+          <caret line="694" column="55" lean-forward="true" selection-start-line="694" selection-start-column="55" selection-end-line="694" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/bundle/ruby/2.5.0/gems/bootstrap-sass-3.3.7/lib/bootstrap-sass.rb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/bundle/ruby/2.5.0/gems/railties-5.2.0/lib/rails/application/bootstrap.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-497">
+          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/bundle/ruby/2.5.0/gems/activemodel-5.2.0/lib/active_model/validations/confirmation.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/cable.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/summaries/edit.html.slim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/bundle/ruby/2.5.0/gems/capybara-3.0.3/lib/capybara.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6481">
+          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/bundle/ruby/2.5.0/gems/actionview-5.2.0/lib/action_view/helpers/form_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="888">
+          <caret line="2198" column="10" selection-start-line="2198" selection-start-column="10" selection-end-line="2198" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/summaries/new.html.slim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/summaries.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/summaries/index.html.slim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="56" column="118" lean-forward="true" selection-start-line="56" selection-start-column="15" selection-end-line="56" selection-end-column="118" />
+          <folding>
+            <element signature="e#85#136#1" expanded="true" />
+            <element signature="e#144#192#1" expanded="true" />
+            <element signature="e#1012#1049#0" expanded="true" />
+            <element signature="e#1324#1369#0" expanded="true" />
+            <element signature="e#1456#1503#0" expanded="true" />
+            <element signature="e#1540#1587#0" expanded="true" />
+            <element signature="e#2519#2557#0" expanded="true" />
+            <element signature="e#2657#2704#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/locales/ja.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="524">
+          <caret line="35" column="16" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/summaries_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+          <folding>
+            <element signature="e#505#546#0" expanded="true" />
+            <element signature="e#755#797#0" expanded="true" />
+            <element signature="e#960#1001#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/summaries/_form.html.slim">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="52" lean-forward="true" selection-start-line="36" selection-start-column="52" selection-end-line="36" selection-end-column="52" />
+          <folding>
+            <element signature="e#1661#1707#0" expanded="true" />
+            <element signature="e#2329#2369#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/summary.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>

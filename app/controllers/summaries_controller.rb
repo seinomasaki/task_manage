@@ -4,7 +4,10 @@ class SummariesController < ApplicationController
   helper_method :sort_column, :sort_direction
 
   def index
-    @tasks = Summary.all.unscoped.order(sort_column + ' ' + sort_direction)
+    @tasks = Summary
+             .all.unscoped.order(sort_column + ' ' + sort_direction)
+             .search(params)
+             .page(params[:page]).per(10)
   end
 
   def new
@@ -14,7 +17,7 @@ class SummariesController < ApplicationController
   def create
     @tasks = Summary.new(tasks_params)
     if @tasks.save
-      flash[:notice] = t('activerecord.attributes.flash.create')
+      flash[:success] = t('activerecord.attributes.flash.create')
       redirect_to @tasks
     else
       render 'new'
@@ -27,13 +30,13 @@ class SummariesController < ApplicationController
 
   def destroy
     @tasks.destroy
-    flash[:notice] = t('activerecord.attributes.flash.destroy')
+    flash[:success] = t('activerecord.attributes.flash.destroy')
     redirect_to summaries_path
   end
 
   def update
     if @tasks.update(tasks_params)
-      flash[:notice] = t('activerecord.attributes.flash.update')
+      flash[:success] = t('activerecord.attributes.flash.update')
       redirect_to @tasks
     else
       render 'edit'

@@ -168,6 +168,18 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
+      <library name="autoprefixer-rails (vbundled(8.5.0)) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/autoprefixer-rails-8.5.0/vendor" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/autoprefixer-rails-8.5.0/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/autoprefixer-rails-8.5.0/vendor" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/autoprefixer-rails-8.5.0/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
       <library name="bindex (vbundled(0.5.0)) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/bindex-0.5.0/ext" />
@@ -190,6 +202,22 @@
           <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/bootsnap-1.3.0/ext" />
           <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/bootsnap-1.3.0/bin" />
           <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/bootsnap-1.3.0/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="bootstrap-sass (vbundled(3.3.7)) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/bootstrap-sass-3.3.7/templates" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/bootstrap-sass-3.3.7/tasks" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/bootstrap-sass-3.3.7/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/bootstrap-sass-3.3.7/assets" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/bootstrap-sass-3.3.7/templates" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/bootstrap-sass-3.3.7/tasks" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/bootstrap-sass-3.3.7/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/bootstrap-sass-3.3.7/assets" />
         </SOURCES>
       </library>
     </orderEntry>
@@ -438,6 +466,18 @@
         <SOURCES>
           <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/jbuilder-2.7.0/gemfiles" />
           <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/jbuilder-2.7.0/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jquery-rails (vbundled(4.3.3)) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/jquery-rails-4.3.3/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/jquery-rails-4.3.3/vendor" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/jquery-rails-4.3.3/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/jquery-rails-4.3.3/vendor" />
         </SOURCES>
       </library>
     </orderEntry>
@@ -1044,6 +1084,18 @@
           <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/tilt-2.0.8/lib" />
           <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/tilt-2.0.8/bin" />
           <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/tilt-2.0.8/man" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="toastr-rails (vbundled(1.0.3)) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/toastr-rails-1.0.3/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/toastr-rails-1.0.3/vendor" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/toastr-rails-1.0.3/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/toastr-rails-1.0.3/vendor" />
         </SOURCES>
       </library>
     </orderEntry>

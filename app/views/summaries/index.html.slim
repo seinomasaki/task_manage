@@ -1,31 +1,75 @@
--if flash[:notice]
-  = flash[:notice]
+div.container
+  div.page-header
+    h1 = I18n.t('activerecord.attributes.view.index_header')
 
-h1 = t('activerecord.attributes.view.index_header')
-h2 = t('activerecord.attributes.view.index_sub')
+  h2 = I18n.t('activerecord.attributes.view.index_sub')
 
-table
-  thead
-    tr
-      th = Summary.human_attribute_name :task_name
-      th = Summary.human_attribute_name :label
-      th = Summary.human_attribute_name :contents
-      th = sortable 'priority', t('activerecord.attributes.summary.priority')
-      th = Summary.human_attribute_name :status
-      th = sortable 'time_limit', t('activerecord.attributes.summary.time_limit')
-      th = sortable 'created_at', t('activerecord.attributes.summary.created_at')
+  div.row
+    div class="col-xs-12 col-sm-12 col-md-12"
+      div.input-group
+        = form_for(summaries_path, method: "get") do
+          .row
+            div class="col-xs-6 col-sm-3 col-md-3"
+              = label_tag :task_name, "タスク名"
+              = text_field_tag :task_name, params[:task_name], class: "form-control"
+            div class="col-xs-6 col-sm-3 col-md-3"
+              = label_tag :label, "ラベル"
+              = text_field_tag :label, params[:label], class: "form-control"
+            div class="col-xs-6 col-sm-3 col-md-3"
+              = label_tag :contents, "内容"
+              = text_field_tag :contents, params[:contents], class: "form-control"
 
-  tbody
-    - @tasks.each do |task|
+          .row
+            div.mt20
+              div class="col-xs-6 col-sm-4 col-md-3"
+                = label_tag :status, "着手状況"
+                = select_tag :status, options_for_select(Summary.statuses), include_blank: true, class: "form-control"
+              div class="col-xs-6 col-sm-4 col-md-3"
+                = label_tag :priority, "優先度"
+                = select_tag :priority, options_for_select(Summary.priorities), include_blank: true, class: "form-control"
+              div class="col-xs-6 col-sm-4 col-md-3 mt25"
+                = submit_tag "検索", class: "btn btn-primary"
+  br
+  = link_to t('activerecord.attributes.link.new'), new_summary_path
+  br
+
+  table class="table-bordered table-hover"
+    thead
       tr
-        td = task.task_name
-        td = task.label
-        td = task.contents
-        td = task.priority
-        td = task.status
-        td = task.time_limit
-        td = task.created_at
-        td = link_to t('activerecord.attributes.link.edit'), edit_summary_path(task.id), id: 'edit_id'
-        td = link_to t('activerecord.attributes.formalities.delete'), summary_path(task.id), method: :delete, id: 'delete_id'
-br
-= link_to t('activerecord.attributes.link.new'), new_summary_path
+        th.col-md-2.text-center = Summary.human_attribute_name :task_name
+        th.col-md-2.text-center = Summary.human_attribute_name :label
+        th.col-md-3.text-center = Summary.human_attribute_name :contents
+        th.col-md-1.text-center = sortable 'priority', t('activerecord.attributes.summary.priority')
+        th.col-md-1.text-center = Summary.human_attribute_name :status
+        th.col-md-1.text-center = sortable 'time_limit', t('activerecord.attributes.summary.time_limit')
+        th.col-md-1.text-center = sortable 'created_at', t('activerecord.attributes.summary.created_at')
+
+    tbody
+      - @tasks.each do |task|
+        tr.text-center data-href="#{summary_path(task.id)}"
+          td = task.task_name.truncate(25)
+          td = task.label.truncate(25)
+          td = task.contents.truncate(25)
+          td = task.priority
+          td = task.status
+          td = task.time_limit
+          td = task.created_at
+          td = link_to t('activerecord.attributes.link.edit'), edit_summary_path(task.id), id: 'edit_id', class: "btn"
+          td = link_to t('activerecord.attributes.formalities.delete'), summary_path(task.id), method: :delete, id: 'delete_id', class: "btn", data: { confirm: "本当に「#{task.task_name}」を削除してよろしいですか？", :commit => "削除する", :cancel => "キャンセル"}, title: "削除の確認"
+  br
+  = paginate @tasks
+
+
+
+javascript:
+  jQuery( function($) {
+      $('tbody tr[data-href]').addClass('clickable').click( function() {
+        window.location = $(this).attr('data-href');
+      }).find('a').hover( function() {
+          $(this).parents('tr').unbind('click');
+          }, function() {
+          $(this).parents('tr').click( function() {
+              window.location = $(this).attr('data-href');
+          });
+      });
+  });

@@ -55,23 +55,29 @@ RSpec.feature 'Summaries', type: :feature do
   # let(:second) { all('tbody tr')[1].all('td')[3].text }
   describe 'sort tasks list' do
     before do
-      1.upto(2) do |row|
-        FactoryGirl.create(:summary, priority: row, created_at: Date.today + row)
+      1.upto(3) do |row|
+        FactoryGirl.create(:summary, priority: "#{row}", created_at: Date.today + row)
       end
       visit summaries_path
     end
     # defaultで作成日順に昇順されている
     it 'sort by priority' do
       expect(all('tbody tr')[0].all('td')[3].text).not_to eq(all('tbody tr')[1].all('td')[3].text)
-      expect(all('tbody tr')[0].all('td')[3].text).to eq('2')
+      expect(all('tbody tr')[0].all('td')[3].text).to eq('3')
+      expect(all('tbody tr')[1].all('td')[3].text).to eq('2')
+      expect(all('tbody tr')[2].all('td')[3].text).to eq('1')
       # p first
       # p all('tbody tr')[0].all('td')[3].text
       click_on('優先度')
       # p first
       # p all('tbody tr')[0].all('td')[3].text
+      # URLのchangeをみてから再度呼び出ししてみる
+      # expect
       expect(all('tbody tr')[0].all('td')[3].text).not_to eq(all('tbody tr')[1].all('td')[3].text)
       expect(all('tbody tr')[0].all('td')[3].text).to eq('1')
       expect(all('tbody tr')[1].all('td')[3].text).to eq('2')
+      expect(all('tbody tr')[2].all('td')[3].text).to eq('3')
+
     end
   end
 end

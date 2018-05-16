@@ -1,27 +1,30 @@
-h2 = I18n.t('activerecord.attributes.view.show')
+div.container
+  div.page-header
+    h2 = I18n.t('activerecord.attributes.view.show')
 
-dl
-  dt = Summary.human_attribute_name :task_name
-  dd = @tasks.task_name
+  div.row.form-group
+    div class="col-xs-12 col-sm-12 col-md-12"
+      dl
+        .row.col-sm-10.form-control-static
+          dt = Summary.human_attribute_name :task_name
+          dd.well = @tasks.task_name
+        .row.col-sm-10.form-control-static
+          dt = Summary.human_attribute_name :label
+          dd.well = @tasks.label
+        .row.col-sm-10.form-control-static
+          dt = Summary.human_attribute_name :time_limit
+          dd.well = @tasks.time_limit
+        .row.col-sm-10.form-control-static
+          dt = Summary.human_attribute_name :contents
+          dd.well = @tasks.contents
+        .row.col-sm-3.form-control-static
+          dt = Summary.human_attribute_name :status
+          dt.well = @tasks.status
+        .row.col-sm-3.form-control-static.ml20
+          dt = Summary.human_attribute_name :priority
+          dt.well = @tasks.priority
 
-  dt = Summary.human_attribute_name :label
-  dd = @tasks.label
-
-  dt = Summary.human_attribute_name :time_limit
-  dd = @tasks.time_limit
-
-  dt = Summary.human_attribute_name :contents
-  dd = @tasks.contents
-
-  dt = Summary.human_attribute_name :status
-  dd = @tasks.status
-
-  dt = Summary.human_attribute_name :priority
-  dd = @tasks.priority
-
-table
-  tr
-    td
-      = link_to I18n.t('activerecord.attributes.link.index'), summaries_path
-    td
-      = link_to I18n.t('activerecord.attributes.link.edit'), edit_summary_path
+  table
+    tr.button-group
+      td = link_to I18n.t('activerecord.attributes.link.index'), summaries_path, class: "btn btn-primary"
+      td = link_to I18n.t('activerecord.attributes.link.edit'), edit_summary_path, class: "btn btn-primary ml15"

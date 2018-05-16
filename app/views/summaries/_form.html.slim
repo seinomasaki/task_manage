@@ -1,28 +1,49 @@
-- if @tasks.errors.any?
-  - @tasks.errors.full_messages.each do |message|
-    p = message
+div.container
+  - if @tasks.errors.any?
+    - @tasks.errors.full_messages.each do |message|
+      javascript:
+        toastr.warning('#{message}');
 
-= form_for @tasks do |f|
+  div.row
+    div class="col-xs-12 col-sm-12 col-md-12"
+      div.input-group
+        = form_for @tasks do |f|
+          .row.col-sm-12.form-control-static
+            label
+              span class="label label-danger mr10" 必須
+              = Summary.human_attribute_name :task_name
+            dt = f.text_field :task_name, class: "form-control"
+          .row.col-sm-12.form-control-static
+            label
+              span class="label label-danger mr10" 必須
+              = Summary.human_attribute_name :label
+            dt = f.text_field :label, class: "form-control"
+          .row.col-sm-12.form-control-static
+            label
+              span class="label label-default mr10" 任意
+              = Summary.human_attribute_name :time_limit
+            dt = f.datetime_field :time_limit, class: "form-control"
+            / vendor/bundle/ruby/2.5.0/gems/actionview-5.2.0/lib/action_view/helpers/tags/form_tag_helper.rb
+              det datetime_field_tag(686~688)をコメントアウト
+              optionで未入力時にメッセージが自動で出るため
+          .row.col-sm-12.form-control-static
+            label
+              span class="label label-default mr10" 任意
+              = Summary.human_attribute_name :contents
+            dt = f.text_area :contents, class: "form-control"
 
- dt = Summary.human_attribute_name :task_name
- dt = f.text_field :task_name
- #human
+          .row
+            div.mt20
+              div class="col-xs-6 col-sm-4 col-md-3"
+                label
+                  span class="label label-danger mr10" 必須
+                  = Summary.human_attribute_name :status
+                dt = f.select :status, options_for_select(Summary.statuses), {include_blank: true}, class: "form-control"
+              div class="col-xs-6 col-sm-4 col-md-3"
+                label
+                  span class="label label-danger mr10" 必須
+                  = Summary.human_attribute_name :priority
+                dt = f.select :priority, options_for_select(Summary.priorities), {include_blank: true}, class: "form-control"
 
- dt = Summary.human_attribute_name :label
- dt = f.text_field :label
-
- dt = Summary.human_attribute_name :time_limit
- dt = f.datetime_field :time_limit
-
- dt = Summary.human_attribute_name :contents
- dt = f.text_area :contents
-
- dt = Summary.human_attribute_name :status
- dt = f.select :status, [[t('activerecord.attributes.select.non_start')],
-                        [t('activerecord.attributes.select.under_start')],
-                        [t('activerecord.attributes.select.completion')]]
-
- dt = Summary.human_attribute_name :priority
- dt = f.select :priority, [['4'],['3'],['2'],['1']]
-
- dt = f.submit t('activerecord.attributes.formalities.creat')
+          = f.submit t('activerecord.attributes.formalities.creat'), method: :delete, class: "btn btn-primary mt20", data: { confirm: "本当に「#{@tasks.task_name}」を登録してよろしいですか？", :commit => "登録する", :cancel => "キャンセル"}, title: "登録の確認"
+          = link_to t('activerecord.attributes.link.cansel'), summaries_path, class: "btn btn-primary mt20 ml10"
