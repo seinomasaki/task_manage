@@ -683,9 +683,9 @@ module ActionView
       # * <tt>:max</tt> - The maximum acceptable value.
       # * <tt>:step</tt> - The acceptable value granularity.
       # * Otherwise accepts the same options as text_field_tag.
-      # def datetime_field_tag(name, value = nil, options = {})
-      #   text_field_tag(name, value, options.merge(type: "datetime-local"))
-      # end
+      def datetime_field_tag(name, value = nil, options = {})
+        text_field_tag(name, value, options.merge(type: "datetime-local"))
+      end
 
       alias datetime_local_field_tag datetime_field_tag
 
