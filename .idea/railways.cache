@@ -1,5 +1,28 @@
                    Prefix Verb   URI Pattern                                                                              Controller#Action
-                     root GET    /                                                                                        summaries#index
+             labels_index GET    /labels/index(.:format)                                                                  labels#index
+       summaries_calendar GET    /summaries/calendar(.:format)                                                            summaries#calendar
+                 sessions POST   /sessions(.:format)                                                                      sessions#create
+              new_session GET    /sessions/new(.:format)                                                                  sessions#new
+                  session DELETE /sessions/:id(.:format)                                                                  sessions#destroy
+                   groups GET    /groups(.:format)                                                                        groups#index
+                          POST   /groups(.:format)                                                                        groups#create
+                new_group GET    /groups/new(.:format)                                                                    groups#new
+               edit_group GET    /groups/:id/edit(.:format)                                                               groups#edit
+                    group GET    /groups/:id(.:format)                                                                    groups#show
+                          PATCH  /groups/:id(.:format)                                                                    groups#update
+                          PUT    /groups/:id(.:format)                                                                    groups#update
+                          DELETE /groups/:id(.:format)                                                                    groups#destroy
+                    users GET    /users(.:format)                                                                         users#index
+                          POST   /users(.:format)                                                                         users#create
+                 new_user GET    /users/new(.:format)                                                                     users#new
+                edit_user GET    /users/:id/edit(.:format)                                                                users#edit
+                     user GET    /users/:id(.:format)                                                                     users#show
+                          PATCH  /users/:id(.:format)                                                                     users#update
+                          PUT    /users/:id(.:format)                                                                     users#update
+                          DELETE /users/:id(.:format)                                                                     users#destroy
+                   labels GET    /labels(.:format)                                                                        labels#index
+                          POST   /labels(.:format)                                                                        labels#create
+                    label DELETE /labels/:id(.:format)                                                                    labels#destroy
                 summaries GET    /summaries(.:format)                                                                     summaries#index
                           POST   /summaries(.:format)                                                                     summaries#create
               new_summary GET    /summaries/new(.:format)                                                                 summaries#new
@@ -8,6 +31,34 @@
                           PATCH  /summaries/:id(.:format)                                                                 summaries#update
                           PUT    /summaries/:id(.:format)                                                                 summaries#update
                           DELETE /summaries/:id(.:format)                                                                 summaries#destroy
+                     root GET    /                                                                                        summaries#index
+ admin_summaries_calendar GET    /admin/summaries/calendar(.:format)                                                      admin/summaries#calendar
+             admin_groups GET    /admin/groups(.:format)                                                                  admin/groups#index
+                          POST   /admin/groups(.:format)                                                                  admin/groups#create
+          new_admin_group GET    /admin/groups/new(.:format)                                                              admin/groups#new
+         edit_admin_group GET    /admin/groups/:id/edit(.:format)                                                         admin/groups#edit
+              admin_group GET    /admin/groups/:id(.:format)                                                              admin/groups#show
+                          PATCH  /admin/groups/:id(.:format)                                                              admin/groups#update
+                          PUT    /admin/groups/:id(.:format)                                                              admin/groups#update
+                          DELETE /admin/groups/:id(.:format)                                                              admin/groups#destroy
+              admin_users GET    /admin/users(.:format)                                                                   admin/users#index
+          edit_admin_user GET    /admin/users/:id/edit(.:format)                                                          admin/users#edit
+               admin_user GET    /admin/users/:id(.:format)                                                               admin/users#show
+                          PATCH  /admin/users/:id(.:format)                                                               admin/users#update
+                          PUT    /admin/users/:id(.:format)                                                               admin/users#update
+                          DELETE /admin/users/:id(.:format)                                                               admin/users#destroy
+             admin_labels GET    /admin/labels(.:format)                                                                  admin/labels#index
+                          POST   /admin/labels(.:format)                                                                  admin/labels#create
+              admin_label DELETE /admin/labels/:id(.:format)                                                              admin/labels#destroy
+          admin_summaries GET    /admin/summaries(.:format)                                                               admin/summaries#index
+                          POST   /admin/summaries(.:format)                                                               admin/summaries#create
+        new_admin_summary GET    /admin/summaries/new(.:format)                                                           admin/summaries#new
+       edit_admin_summary GET    /admin/summaries/:id/edit(.:format)                                                      admin/summaries#edit
+            admin_summary GET    /admin/summaries/:id(.:format)                                                           admin/summaries#show
+                          PATCH  /admin/summaries/:id(.:format)                                                           admin/summaries#update
+                          PUT    /admin/summaries/:id(.:format)                                                           admin/summaries#update
+                          DELETE /admin/summaries/:id(.:format)                                                           admin/summaries#destroy
+               admin_root GET    /admin(.:format)                                                                         admin/summaries#index
        rails_service_blob GET    /rails/active_storage/blobs/:signed_id/*filename(.:format)                               active_storage/blobs#show
 rails_blob_representation GET    /rails/active_storage/representations/:signed_blob_id/:variation_key/*filename(.:format) active_storage/representations#show
        rails_disk_service GET    /rails/active_storage/disk/:encoded_key/*filename(.:format)                              active_storage/disk#show

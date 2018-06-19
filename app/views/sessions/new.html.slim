@@ -1,0 +1,17 @@
+div.container
+  div.page-header
+    h1 Sessions#new
+    p log in page
+
+    div class="col-xs-12 col-sm-12 col-md-12 mt20"
+      div.input-group
+        = form_for :session, url: sessions_path do |f|
+          .row.col-sm-12.form-control-static
+            = f.label :email, 'E-mail'
+            dt = f.text_field :email, class: "form-control"
+          .row.col-sm-12.form-control-static
+            = f.label :password, 'PassWord'
+            dt = f.password_field :password, class: "form-control"
+
+          = f.submit t('activerecord.attributes.formalities.login'), class: "btn btn-primary mt20"
+          = link_to t('activerecord.attributes.link.userNew'), new_user_url, class: "btn btn-primary mt20 ml10"

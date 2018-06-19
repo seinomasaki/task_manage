@@ -1,0 +1,45 @@
+.container
+  h2 = I18n.t('activerecord.attributes.view.user.new')
+
+  div class="col-xs-12 col-sm-12 col-md-12"
+    div.input-group
+      =form_for @user do |f|
+        .row.col-sm-12.form-control-static
+          label
+            span class="label label-danger mr10" 必須
+            = f.label User.human_attribute_name :name
+          dt = f.text_field :name, class: "form-control"
+        .row.col-sm-12.form-control-static
+          label
+            span class="label label-danger mr10" 必須
+            = f.label User.human_attribute_name :email
+          dt = f.text_field :email, class: "form-control"
+        .row.col-sm-12.form-control-static
+          label
+            span class="label label-danger mr10" 必須
+            = f.label :password, 'PassWord'
+          dt = f.password_field :password, class: "form-control"
+        .row.col-sm-12.form-control-static
+          label
+            span class="label label-danger mr10" 必須
+            = f.label :password_confirmation, 'PassWord'
+          dt = f.password_field :password_confirmation, class: "form-control"
+        .row
+          label.mt10.form-group
+            span class="label label-default mt20 ml15" 任意
+            = f.label :general, I18n.t('activerecord.attributes.general.title'), class: "ml10"
+          .row.ml10
+            .col-sm-12.btu-group data-toggle='buttons'
+              label.btn.btn-info style='width:30%'
+                = f.label :general, I18n.t('activerecord.attributes.general.man')
+                = f.radio_button :general, I18n.t('activerecord.attributes.general.man')
+              label.btn.btn-info.active style='width:30%'
+                = f.label :general, I18n.t('activerecord.attributes.general.middle')
+                = f.radio_button :general, I18n.t('activerecord.attributes.general.middle')
+              label.btn.btn-info style='width:30%'
+                = f.label :general, I18n.t('activerecord.attributes.general.woman')
+                = f.radio_button :general, I18n.t('activerecord.attributes.general.woman')
+
+
+        = f.submit t('activerecord.attributes.formalities.creat'), class: "btn btn-primary mt20"
+        = link_to t('activerecord.attributes.link.cansel'), new_session_path, class: "btn btn-primary mt20 ml10"

@@ -1,19 +1,28 @@
 require 'rails_helper'
 
-RSpec.feature 'Summaries', type: :feature do
-  DatabaseRewinder.clean_all
-
+RSpec.feature 'Summaries', type: :feature, js: true do
   describe 'click entry button' do
+    before do
+      FactoryGirl.create(:user, :general)
+      FactoryGirl.create(:user, :admin)
+      visit new_session_path
+      fill_in 'session[email]', with: 'seino@g.com'
+      fill_in 'session[password]', with: 'pass'
+      click_button 'ログイン'
+    end
+
     it 'create new task' do
+      visit new_summary_path
       expect {
-        visit new_summary_path
         fill_in 'summary[task_name]', with: '山形'
         fill_in 'summary[label]', with: '上山'
-        fill_in 'summary[time_limit]', with: '1993/07/03 00:00'
+        # select '1993/07/03 00:00', from: 'summary[time_limit]'
         fill_in 'summary[contents]', with: '地元'
         select '完了', from: 'summary[status]'
         select '4', from: 'summary[priority]'
         click_button '登録'
+        page.accept_confirm
+        expect(page).to have_content '作成しました。'
       }.to change(Summary, :count).by(1)
     end
   end
@@ -29,30 +38,34 @@ RSpec.feature 'Summaries', type: :feature do
       visit summaries_path
       expect {
         page.all('tbody tr')[0].find_by_id('delete_id').click
+        page.accept_confirm
+        expect(page).to have_content '削除しました。'
       }.to change(Summary, :count).by(-1)
     end
   end
 
 
-  describe 'edit task after update' do
+  describe 'update task' do
     before do
-      @task = FactoryGirl.create(:summary)
       visit summaries_path
       page.all('tbody tr')[0].find_by_id('edit_id').click
     end
-    let(:task) { Summary.find(@task.id) }
+    let(:task) { FactoryGirl.create(:summary, label: 'before label') }
     context 'task word change' do
-      let(:text) { 'Rspec' }
-      it 'rewrite label' do
-        fill_in 'summary[label]', with: text
+      before do
+        fill_in 'summary[task_name]', with: 'Rspec'
+        select '完了', from: 'summary[status]'
+        select '4', from: 'summary[priority]'
         click_button '登録'
-        expect(text).to eq(task.label)
+        page.accept_confirm
+        expect(page).to have_content '編集しました。'
+      end
+      it 'summary[task_name]: ruby on rails (mySQL) -> Rspec' do
+        expect('Rspec').to eq(task.task_name)
       end
     end
   end
 
-  # let(:first) { all('tbody tr')[0].all('td')[3].text }
-  # let(:second) { all('tbody tr')[1].all('td')[3].text }
   describe 'sort tasks list' do
     before do
       1.upto(3) do |row|
@@ -62,22 +75,13 @@ RSpec.feature 'Summaries', type: :feature do
     end
     # defaultで作成日順に昇順されている
     it 'sort by priority' do
-      expect(all('tbody tr')[0].all('td')[3].text).not_to eq(all('tbody tr')[1].all('td')[3].text)
       expect(all('tbody tr')[0].all('td')[3].text).to eq('3')
       expect(all('tbody tr')[1].all('td')[3].text).to eq('2')
       expect(all('tbody tr')[2].all('td')[3].text).to eq('1')
-      # p first
-      # p all('tbody tr')[0].all('td')[3].text
       click_on('優先度')
-      # p first
-      # p all('tbody tr')[0].all('td')[3].text
-      # URLのchangeをみてから再度呼び出ししてみる
-      # expect
-      expect(all('tbody tr')[0].all('td')[3].text).not_to eq(all('tbody tr')[1].all('td')[3].text)
       expect(all('tbody tr')[0].all('td')[3].text).to eq('1')
       expect(all('tbody tr')[1].all('td')[3].text).to eq('2')
       expect(all('tbody tr')[2].all('td')[3].text).to eq('3')
-
     end
   end
 end

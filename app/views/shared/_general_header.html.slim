@@ -1,0 +1,29 @@
+= render 'shared/head'
+
+- if @current_user.present?
+  header
+    nav class='navbar'
+      .container-fluid
+        h1 = I18n.t('activerecord.header.title')
+          button type='button' class='navbar-toggle collapsed' data-toggle='collapse' data-target='#navbarEexample'
+            span class='sr-only' Toggle navigation
+            span class='icon-bar'
+            span class='icon-bar'
+            span class='icon-bar'
+
+        div class='collapse navbar-collapse navbar-header text-center' id='navbarEexample'
+          ul class='nav navbar-nav'
+            li.text-center = link_to I18n.t('activerecord.header.calendar'), summaries_calendar_path
+            li.text-center = link_to I18n.t('activerecord.header.task.index'), summaries_path
+            li.text-center = link_to I18n.t('activerecord.header.label.index'), labels_path
+            li.dropdown
+              a.dropdown-toggle data-toggle='dropdown'
+                = I18n.t('activerecord.header.user.title')
+                b class='caret'
+              ul class='dropdown-menu'
+                li.text-center = link_to I18n.t('activerecord.header.user.index'), users_path
+                li.text-center = link_to I18n.t('activerecord.header.user.edit'), edit_user_path(@current_user.id)
+                li.text-center = link_to I18n.t('activerecord.header.user.show'), user_path(@current_user.id)
+            li.text-center = link_to I18n.t('activerecord.header.group.general'), groups_path
+
+        = link_to t('activerecord.attributes.formalities.logout'), session_path(@current_user.id), method: :delete, class: 'navbar-brand pull-right'

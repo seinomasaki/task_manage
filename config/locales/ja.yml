@@ -1,25 +1,74 @@
 ja:
   activerecord:
-    new_header: task新規作成
+    header:
+      title: 神々の戯れ
+      calendar: カレンダー
+      task:
+        index: タスク一覧
+      label:
+        index: ラベル管理
+      user:
+        title: ユーザー
+        index: ユーザ一覧
+        show: プロフィール
+        edit: プロフィール編集
+      group:
+        admin: グループ管理
+        general: 所属グループ一覧
 
     attributes:
+      user:
+        name: 名前
+        email: Emailアドレス
+        general: 性別
+        admin: 管理者権限
+
+      admin:
+        true: 管理者
+        false: 一般
+
       summary:
+        group: 担当グループ
+        close_to_deadline: 期限1週間以内
+        deadline_over: 期限切れ
         task_name: タスク名
         label: ラベル
+        labels: ラベル
         contents: 内容
         time_limit: 期限
-        status: 着手状況
+        status: 状況
         priority: 優先度
         created_at: 作成日
+        make_user: 作成者
+        file: 添付資料
+
+      label:
+        name: ラベル名
+
+      group:
+        name: グループ名
+        intention: 目的
+        users: メンバー
+
+      general:
+        title: 性別
+        man: 男
+        woman: 女
+        middle: 中間
 
       link:
+        password_reset: パスワード再設定
+        task_janp: タスク一覧
         index: 一覧
         new: 新規作成
         edit: 編集
         search: 検索
         cansel: キャンセル
+        userNew: 新規登録
 
       formalities:
+        login: ログイン
+        logout: ログアウト
         creat: 登録
         delete: 削除
 
@@ -29,16 +78,31 @@ ja:
         completion: 完了
 
       view:
-        index_header: しあわせ一覧
-        index_sub: 現在のしあわせ一覧
-        new: 新規作成
-        edit: 編集
-        show: 詳細情報
+        summary:
+          index: 現在のしあわせ一覧
+          new: 新規作成
+          edit: 編集
+          show: 詳細情報
+          calendar: 月間 ~Task期限~
+        user:
+          index: ファミリア
+          new: 新規作成
+          edit: プロフィール編集
+          show: プロフィール
+        group:
+          index: グループ一覧･新規作成
+          edit: グループ編集
+          show: グループ詳細
 
       flash:
-        create: タスクを作成しました。
-        destroy: タスクを削除しました。
-        update: タスクを編集しました。
+        unauthorized: あなたにはその権限は付与されていません。
+        failure: EmailまたはPasswordが間違っています。
+        loged: ログインしてください
+        login: ログインしました。
+        logout: ログアウトしました。
+        create: 作成しました。
+        destroy: 削除しました。
+        update: 編集しました。
 
   errors:
     format: "%{attribute}%{message}"
@@ -58,6 +122,7 @@ ja:
       less_than: は%{count}より小さい値にしてください
       less_than_or_equal_to: は%{count}以下の値にしてください
       model_invalid: "バリデーションに失敗しました: %{errors}"
+#      record_invalid: "バリデーションに失敗しました: %{errors}"
       not_a_number: は数値で入力してください
       not_an_integer: は整数で入力してください
       odd: は奇数にしてください
@@ -72,3 +137,26 @@ ja:
       header:
         one: "%{model}にエラーが発生しました"
         other: "%{model}に%{count}個のエラーが発生しました"
+
+  calendar:
+    month:
+      - 1月
+      - 2月
+      - 3月
+      - 4月
+      - 5月
+      - 6月
+      - 7月
+      - 8月
+      - 9月
+      - 10月
+      - 11月
+      - 12月
+    week:
+      - 日
+      - 月
+      - 火
+      - 水
+      - 木
+      - 金
+      - 土

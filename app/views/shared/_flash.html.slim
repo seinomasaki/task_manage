@@ -1,0 +1,9 @@
+- if flash.present?
+  - flash.each do |type, message|
+    - if type=='warning'
+      - message.each do |m|
+        javascript:
+            toastr['#{type}']('#{m}');
+    - else
+      javascript:
+          toastr['#{type}']('#{message}');
