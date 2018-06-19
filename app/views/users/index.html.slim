@@ -1,0 +1,28 @@
+.container
+  h2 = I18n.t('activerecord.attributes.view.user.index')
+
+  table class="table-bordered table-hover table"
+    thead
+      tr
+        th.text-center = User.human_attribute_name :name
+        th.text-center = User.human_attribute_name :general
+        th.text-center = User.human_attribute_name :admin
+
+    tbody
+      - @users.each do |user|
+        tr.text-center
+          td = user.name.truncate(25)
+          td = user.general
+          td = t("activerecord.attributes.admin.#{user.admin}")
+  br
+  = paginate @users
+
+javascript:
+   jQuery( function($) {
+       $('.select-label').select2({
+           placeholder: '選択して下さい',
+           allowClear: true,
+           width: "100%"
+       });
+       $('tbody').sortable();
+   });

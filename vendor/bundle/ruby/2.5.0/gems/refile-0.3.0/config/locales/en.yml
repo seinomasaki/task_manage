@@ -1,0 +1,6 @@
+en:
+  activerecord:
+    errors:
+      messages:
+        too_large: "is too large"
+        download_failed: "could not be downloaded"

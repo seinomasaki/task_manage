@@ -168,14 +168,26 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="autoprefixer-rails (vbundled(8.5.0)) [path][gem]">
+      <library name="autoprefixer-rails (vbundled(8.6.2)) [path][gem]">
         <CLASSES>
-          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/autoprefixer-rails-8.5.0/vendor" />
-          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/autoprefixer-rails-8.5.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/autoprefixer-rails-8.6.2/vendor" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/autoprefixer-rails-8.6.2/lib" />
         </CLASSES>
         <SOURCES>
-          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/autoprefixer-rails-8.5.0/vendor" />
-          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/autoprefixer-rails-8.5.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/autoprefixer-rails-8.6.2/vendor" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/autoprefixer-rails-8.6.2/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="bcrypt (vbundled(3.1.12)) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/bcrypt-3.1.12/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/bcrypt-3.1.12/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/bcrypt-3.1.12/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/bcrypt-3.1.12/lib" />
         </SOURCES>
       </library>
     </orderEntry>
@@ -248,14 +260,36 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="capybara (vbundled(3.0.3)) [path][gem]">
+      <library name="capybara (vbundled(3.2.1)) [path][gem]">
         <CLASSES>
-          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/capybara-3.0.3/.yard" />
-          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/capybara-3.0.3/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/capybara-3.2.1/lib" />
         </CLASSES>
         <SOURCES>
-          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/capybara-3.0.3/.yard" />
-          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/capybara-3.0.3/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/capybara-3.2.1/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="carrierwave (vbundled(1.2.2)) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/carrierwave-1.2.2/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/carrierwave-1.2.2/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="chartkick (vbundled(2.3.4)) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/chartkick-2.3.4/.github" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/chartkick-2.3.4/vendor" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/chartkick-2.3.4/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/chartkick-2.3.4/.github" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/chartkick-2.3.4/vendor" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/chartkick-2.3.4/lib" />
         </SOURCES>
       </library>
     </orderEntry>
@@ -280,6 +314,18 @@
           <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/chromedriver-helper-1.2.0/concourse" />
           <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/chromedriver-helper-1.2.0/lib" />
           <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/chromedriver-helper-1.2.0/bin" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="coderay (vbundled(1.1.2)) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/coderay-1.1.2/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/coderay-1.1.2/bin" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/coderay-1.1.2/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/coderay-1.1.2/bin" />
         </SOURCES>
       </library>
     </orderEntry>
@@ -412,16 +458,26 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="ffi (vbundled(1.9.23)) [path][gem]">
+      <library name="fastimage (vbundled(2.1.3)) [path][gem]">
         <CLASSES>
-          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/ffi-1.9.23/ext" />
-          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/ffi-1.9.23/samples" />
-          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/ffi-1.9.23/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/fastimage-2.1.3/lib" />
         </CLASSES>
         <SOURCES>
-          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/ffi-1.9.23/ext" />
-          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/ffi-1.9.23/samples" />
-          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/ffi-1.9.23/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/fastimage-2.1.3/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="ffi (vbundled(1.9.25)) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/ffi-1.9.25/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/ffi-1.9.25/samples" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/ffi-1.9.25/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/ffi-1.9.25/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/ffi-1.9.25/samples" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/ffi-1.9.25/lib" />
         </SOURCES>
       </library>
     </orderEntry>
@@ -584,6 +640,28 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
+      <library name="mime-types (vbundled(3.1)) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/mime-types-3.1/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/mime-types-3.1/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="mime-types-data (vbundled(3.2016.0521)) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/mime-types-data-3.2016.0521/data" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/mime-types-data-3.2016.0521/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/mime-types-data-3.2016.0521/data" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/mime-types-data-3.2016.0521/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
       <library name="mimemagic (vbundled(0.3.2)) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/mimemagic-0.3.2/script" />
@@ -702,6 +780,30 @@
           <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/nokogiri-1.8.2/suppressions" />
           <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/nokogiri-1.8.2/bin" />
           <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/nokogiri-1.8.2/tasks" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="pry (vbundled(0.11.3)) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/pry-0.11.3/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/pry-0.11.3/bin" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/pry-0.11.3/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/pry-0.11.3/bin" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="pry-rails (vbundled(0.3.6)) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/pry-rails-0.3.6/gemfiles" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/pry-rails-0.3.6/lib" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/pry-rails-0.3.6/gemfiles" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/pry-rails-0.3.6/lib" />
         </SOURCES>
       </library>
     </orderEntry>
@@ -842,6 +944,20 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
+      <library name="rmagick (vbundled(2.16.0)) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/rmagick-2.16.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/rmagick-2.16.0/deprecated" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/rmagick-2.16.0/ext" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/rmagick-2.16.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/rmagick-2.16.0/deprecated" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/rmagick-2.16.0/ext" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
       <library name="rspec-core (vbundled(3.7.1)) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/rspec-core-3.7.1/exe" />
@@ -952,12 +1068,12 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="selenium-webdriver (vbundled(3.11.0)) [path][gem]">
+      <library name="selenium-webdriver (vbundled(3.12.0)) [path][gem]">
         <CLASSES>
-          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/selenium-webdriver-3.11.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/selenium-webdriver-3.12.0/lib" />
         </CLASSES>
         <SOURCES>
-          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/selenium-webdriver-3.11.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/selenium-webdriver-3.12.0/lib" />
         </SOURCES>
       </library>
     </orderEntry>
@@ -1130,12 +1246,24 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="uglifier (vbundled(4.1.10)) [path][gem]">
+      <library name="uglifier (vbundled(4.1.11)) [path][gem]">
         <CLASSES>
-          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/uglifier-4.1.10/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/uglifier-4.1.11/lib" />
         </CLASSES>
         <SOURCES>
-          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/uglifier-4.1.10/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/uglifier-4.1.11/lib" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="vuejs-rails (vbundled(2.5.13)) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/vuejs-rails-2.5.13/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/vuejs-rails-2.5.13/vendor" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/vuejs-rails-2.5.13/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/vuejs-rails-2.5.13/vendor" />
         </SOURCES>
       </library>
     </orderEntry>
@@ -1172,12 +1300,12 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="xpath (vbundled(3.0.0)) [path][gem]">
+      <library name="xpath (vbundled(3.1.0)) [path][gem]">
         <CLASSES>
-          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/xpath-3.0.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/xpath-3.1.0/lib" />
         </CLASSES>
         <SOURCES>
-          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/xpath-3.0.0/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/ruby/2.5.0/gems/xpath-3.1.0/lib" />
         </SOURCES>
       </library>
     </orderEntry>

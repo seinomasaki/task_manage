@@ -1,0 +1,37 @@
+.container
+  div style='margin:1px; float: left; width:50%; height:80vh;'
+    div style='overflow-y:auto'
+      table class="table-bordered table-hover table"
+        thead
+          tr
+            th.text-center.col-sm-7 = I18n.t('activerecord.attributes.summary.label')
+            th.text-center.col-sm-4 = I18n.t('activerecord.attributes.summary.created_at')
+            th
+
+        tbody
+          - @labels.each do |label|
+            tr.text-center
+              td = label.name
+              td = label.created_at
+              td = link_to t('activerecord.attributes.formalities.delete'), admin_label_path(label.id), method: :delete, id: 'delete_id', class: "btn", data: {title: "削除の確認", confirm: "本当に「#{label.name}」を削除してよろしいですか？", :commit => "削除する", :cancel => "キャンセル"}
+
+  div style='margin:1px; float: right; width:45%; height:80vh;'
+    = form_for [:admin, @label] do |f|
+      .form-control-static
+        .col-sm-8
+          label
+            = I18n.t('activerecord.attributes.label.name')
+          th = f.text_field :name, class: "form-control "
+        .col-sm-4
+          br
+          = f.submit t('activerecord.attributes.formalities.creat'), class: "btn btn-primary mt5"
+    .mt50
+      = pie_chart(@graph_data)
+
+  div id="chart_div"
+
+
+javascript:
+    jQuery(function ($) {
+        $('tbody').sortable();
+    });

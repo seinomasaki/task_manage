@@ -1,0 +1,65 @@
+/*
+*= require_self
+*= require toastr
+ */
+@import "sessions";
+@import "summaries";
+@import "users";
+@import "groups";
+
+
+$main_color1: #702283;
+$main_color2: #f8d5f0;
+$base_color: #999999;
+$action_color: #fd2e2e;
+$text_color: #F2F2F0;
+
+body {
+  background-color: #fae3e3;
+  header {
+    background: linear-gradient(-200deg, $main_color1, $main_color2);
+    color: $text_color;
+    a {
+      color: $text_color;
+    }
+    ul.dropdown-menu {
+      background-color: $main_color1;
+      li a {
+        color: $text_color;
+        width: 200px;
+        height: 50px;
+        padding: 20px;
+      }
+    }
+  }
+  div.container {
+    ul.pagination {
+      li {
+        span {
+          background-color: $main_color2;
+          color: $base_color
+        }
+        a {
+          background-color: $main_color2;
+          color: $base_color
+        }
+      }
+      .active a {
+        background-color: $action_color;
+        border-color: $main_color2;
+        color: $text_color;
+      }
+    }
+    div#chart-1 {
+      svg{
+        rect{
+          fill: #fae3e3;
+        }
+      }
+    }
+  }
+}
+
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+  background-color: $action_color;
+}
