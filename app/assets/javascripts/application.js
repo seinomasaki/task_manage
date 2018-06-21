@@ -41,7 +41,7 @@ window.onload = function() {
                     },
                 }).done(function (response) {
                     var select_tasks = [];
-                    for ( let i = 0; i < response.length; i++ ) {
+                    for ( var i = 0; i < response.length; i++ ) {
                         select_tasks.push(response[i]);
                     }
                     self.select_tasks = select_tasks;
