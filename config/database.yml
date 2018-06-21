@@ -29,5 +29,9 @@ test:
   database: task_manage_test
 
 production:
-  adapter: postgresql
-  encoding: utf8
+  <<: *default
+  database: task_manage
+  username: masaki0703
+  password: '02171220'
+  host: masaki-db.cog2eig2rblq.ap-northeast-1.rds.amazonaws.com
+  socket: /var/lib/mysql/mysql.sock
