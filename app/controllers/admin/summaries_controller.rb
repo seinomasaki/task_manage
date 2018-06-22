@@ -7,9 +7,9 @@ class Admin::SummariesController < ApplicationController
 
   def index
     @tasks = Summary.all
-             .order(sort_column + ' ' + sort_oder)
-             .search(params)
-             .page(params[:page]).per(10)
+                    .order(sort_column + ' ' + sort_oder)
+                    .search(params)
+                    .page(params[:page]).per(10)
 
     @tasks_close_to_deadline = @tasks.closing_deadline
     @tasks_deadline_over = @tasks.deadline_over
@@ -24,6 +24,14 @@ class Admin::SummariesController < ApplicationController
     @task = Summary.new(tasks_params)
     @task.user_id = @current_user.id
     if @task.save
+      if params[:group_id].present?
+        group = group_menber(params[:group_id])
+        group.users.each do |user|
+          PostMailer.post_email(user, @current_user, @task).deliver
+        end
+      else
+        PostMailer.post_email(@current_user, @current_user, @task).deliver
+      end
       connect_label
       flash[:success] = t('activerecord.attributes.flash.create')
       redirect_to admin_root_path
@@ -57,33 +65,9 @@ class Admin::SummariesController < ApplicationController
   end
 
   def calendar
-    @date_time = Summary.new
     @date_time = params[:datetime].present? ? Date.parse(params[:datetime]) : Date.current
-    year = @date_time.year
-    month = @date_time.month
-    if year >= 1582
-      end_day = if month == 2
-                  if year % 4 == 0 && year % 100 != 0 || year % 400 == 0
-                    29
-                  else
-                    28
-                  end
-                elsif month <= 7
-                  if month.even?
-                    30
-                  else
-                    31
-                  end
-                else
-                  if month.even?
-                    31
-                  else
-                    30
-                  end
-                end
-    end
     month_tasks = Summary.month_task(@date_time, Summary.all)
-    day_tasks = Summary.calendar_tasks(@date_time, end_day, month_tasks)
+    day_tasks = Summary.calendar_tasks(@date_time, Summary.days_in_a_month(@date_time), month_tasks)
     start_week = @date_time.beginning_of_month.wday
     @day_tasks = Array.new(start_week, Array.new(2)) + day_tasks
     @weekly = if @day_tasks.length % 7 == 0
@@ -93,6 +77,7 @@ class Admin::SummariesController < ApplicationController
               end
     @day_tasks = @day_tasks + Array.new(@weekly * 7 - @day_tasks.length) if @day_tasks.length < @weekly * 7
     @tasks = Summary.select_day_tasks(month_tasks, params[:time_limit])
+
     respond_to do |format|
       format.html
       format.json {}
@@ -101,16 +86,13 @@ class Admin::SummariesController < ApplicationController
 
 
   private
+
   def tasks_params
     params.require(:summary).permit(:task_name, :time_limit, :contents, :status, :priority, :group_id, attachments_attributes: [:file])
   end
 
   def set_task
     @task = Summary.find(params[:id])
-  end
-
-  def calendar_params
-    params[:datetime]
   end
 
   def sort_oder

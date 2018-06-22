@@ -18,3 +18,70 @@
 @import "sessions";
 @import "summaries";
 @import "users";
+
+
+
+
+$main_color1: #0099FF;
+$main_color2: #00FFFF;
+$base_color: #f0f0f0;
+$action_color: #002040;
+$text_color: #000000;
+
+body {
+  background-color: $base_color;
+  color: $text_color;
+  header {
+    background: linear-gradient(-200deg, $main_color1, $main_color2);
+    color: $text_color;
+    a {
+      color: $text_color;
+    }
+    ul.dropdown-menu {
+      background-color: $main_color1;
+      li a {
+        color: $text_color;
+        width: 200px;
+        height: 50px;
+        padding: 20px;
+      }
+    }
+  }
+  div.container {
+    from {
+      input {
+        color: $text_color;
+        background-color: $base_color;
+        border-color: #df0054;
+      }
+    }
+    ul.pagination {
+      li {
+        span {
+          background-color: $base_color;
+          color: $text_color;
+        }
+        a {
+          background-color: $base_color;
+          color: $text_color
+        }
+      }
+      .active a {
+        background-color: $action_color;
+        border-color: $main_color2;
+        color: $text_color;
+      }
+    }
+    div#chart-1 {
+      svg {
+        rect {
+          fill: $base_color;
+        }
+      }
+    }
+  }
+}
+
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+  background-color: $action_color;
+}

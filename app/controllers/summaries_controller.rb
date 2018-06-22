@@ -1,6 +1,5 @@
 class SummariesController < ApplicationController
   before_action :set_task, only: %i[show edit update destroy]
-  before_action :calendar_params, only: %i[calendar]
   skip_before_action :admin_user?
   helper_method :sort_column, :sort_oder
 
@@ -66,33 +65,9 @@ class SummariesController < ApplicationController
   end
 
   def calendar
-    @date_time = Summary.new
     @date_time = params[:datetime].present? ? Date.parse(params[:datetime]) : Date.current
-    year = @date_time.year
-    month = @date_time.month
-    if year >= 1582
-      end_day = if month == 2
-                  if year % 4 == 0 && year % 100 != 0 || year % 400 == 0
-                    29
-                  else
-                    28
-                  end
-                elsif month <= 7
-                  if month.even?
-                    30
-                  else
-                    31
-                  end
-                else
-                  if month.even?
-                    31
-                  else
-                    30
-                  end
-                end
-    end
     month_tasks = Summary.month_task(@date_time, Summary.relate_to_myself(@current_user))
-    day_tasks = Summary.calendar_tasks(@date_time, end_day, month_tasks)
+    day_tasks = Summary.calendar_tasks(@date_time, Summary.days_in_a_month(@date_time), month_tasks)
     start_week = @date_time.beginning_of_month.wday
     @day_tasks = Array.new(start_week, Array.new(2)) + day_tasks
     @weekly = if @day_tasks.length % 7 == 0
@@ -102,11 +77,13 @@ class SummariesController < ApplicationController
               end
     @day_tasks = @day_tasks + Array.new(@weekly * 7 - @day_tasks.length) if @day_tasks.length < @weekly * 7
     @tasks = Summary.select_day_tasks(month_tasks, params[:time_limit])
+
     respond_to do |format|
       format.html
       format.json {}
     end
   end
+
 
   private
 
@@ -116,10 +93,6 @@ class SummariesController < ApplicationController
 
   def set_task
     @task = Summary.find(params[:id])
-  end
-
-  def calendar_params
-    params[:datetime]
   end
 
   def sort_oder

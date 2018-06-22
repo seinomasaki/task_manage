@@ -8,14 +8,15 @@
 @import "groups";
 
 
-$main_color1: #702283;
-$main_color2: #f8d5f0;
-$base_color: #999999;
-$action_color: #fd2e2e;
-$text_color: #F2F2F0;
+$main_color1: #FFA258;
+$main_color2: #f9bf8f;
+$base_color: #fff7c2;
+$action_color: #a02a63;
+$text_color: #4b125c;
 
 body {
-  background-color: #fae3e3;
+  background-color: #fff7c2;
+  color: $text_color;
   header {
     background: linear-gradient(-200deg, $main_color1, $main_color2);
     color: $text_color;
@@ -33,15 +34,22 @@ body {
     }
   }
   div.container {
+    from {
+      input {
+        color: $text_color;
+        background-color: #fff7c2;
+        border-color: #df0054;
+      }
+    }
     ul.pagination {
       li {
         span {
-          background-color: $main_color2;
-          color: $base_color
+          background-color: $base_color;
+          color: $text_color;
         }
         a {
-          background-color: $main_color2;
-          color: $base_color
+          background-color: $base_color;
+          color: $text_color
         }
       }
       .active a {
@@ -51,9 +59,9 @@ body {
       }
     }
     div#chart-1 {
-      svg{
-        rect{
-          fill: #fae3e3;
+      svg {
+        rect {
+          fill: #fff7c2;
         }
       }
     }

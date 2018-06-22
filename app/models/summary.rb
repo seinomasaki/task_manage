@@ -37,9 +37,7 @@ class Summary < ApplicationRecord
     if params[:label_ids].present?
       tasks = tasks.joins(:task_labels).where('task_labels.label_id IN (?)', params[:label_ids]).distinct
     end
-    if params[:status].present?
-      tasks = tasks.where(status: params[:status])
-    end
+    tasks = tasks.where(status: params[:status]) if params[:status].present?
     if params[:priority].present?
       tasks = tasks.where(priority: params[:priority])
     end
@@ -52,7 +50,7 @@ class Summary < ApplicationRecord
   def self.closing_deadline
     now = Date.current
     week_later = now + 1.week
-    Summary.where('(time_limit >= ?) and (time_limit <= ?)', now,week_later).where.not(status: '完了')
+    Summary.where('(time_limit >= ?) and (time_limit <= ?)', now, week_later).where.not(status: '完了')
   end
 
   def self.deadline_over
@@ -60,21 +58,47 @@ class Summary < ApplicationRecord
     Summary.where('time_limit <= ?', now).where.not(status: '完了')
   end
 
-  def self.month_task(datetime,tasks)
+  def self.month_task(datetime, tasks)
     begin_month = datetime.beginning_of_month
     end_month = datetime.end_of_month
-    tasks.where('(time_limit >= ?) and (time_limit <= ?)', begin_month,end_month)
+    tasks.where('(time_limit >= ?) and (time_limit <= ?)', begin_month, end_month)
   end
 
   def self.calendar_tasks(datetime, days, tasks)
     day_tasks = []
     1.upto(days) do |day|
-      day_tasks << [day, select_day_tasks(tasks, Date.new(datetime.year,datetime.month,day))]
+      day_tasks << [day, select_day_tasks(tasks, Date.new(datetime.year, datetime.month, day))]
     end
     day_tasks
   end
 
   def self.select_day_tasks(tasks, day)
     tasks.where('time_limit = ?', day)
+  end
+
+  def self.days_in_a_month(date_time)
+    year = date_time.year
+    month = date_time.month
+    if year >= 1582
+      if month == 2
+        if year % 4 == 0 && year % 100 != 0 || year % 400 == 0
+          29
+        else
+          28
+        end
+      elsif month <= 7
+        if month.even?
+          30
+        else
+          31
+        end
+      else
+        if month.even?
+          31
+        else
+          30
+        end
+      end
+    end
   end
 end

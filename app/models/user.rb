@@ -14,6 +14,7 @@ class User < ApplicationRecord
   has_many :group_users, dependent: :destroy
   has_many :groups, through: :group_users
 
+  enum admin: { '管理者': true, '一般': false }
 
   private
 

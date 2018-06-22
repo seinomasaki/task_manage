@@ -1,4 +1,10 @@
 ja:
+  enums:
+    user:
+      admin:
+        true: 管理者
+        false: 一般
+
   activerecord:
     header:
       title: 神々の戯れ
@@ -22,10 +28,6 @@ ja:
         email: Emailアドレス
         general: 性別
         admin: 管理者権限
-
-      admin:
-        true: 管理者
-        false: 一般
 
       summary:
         group: 担当グループ
