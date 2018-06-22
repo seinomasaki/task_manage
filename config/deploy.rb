@@ -1,15 +1,16 @@
-lock "~> 3.11.0"
+# frozen_string_literal: true
+lock '~> 3.11.0'
 
-set :application, "task_manage"
-set :repo_url, "git@github.com:seinomasaki/task_manage.git"
-set :deploy_to, "/var/www/rails/task_manage"
+set :application, 'task_manage'
+set :repo_url, 'git@github.com:seinomasaki/task_manage.git'
+set :deploy_to, '/var/www/rails/task_manage'
 ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 set :format, :pretty
 set :log_level, :debug
 
 namespace :deploy do
-  desc "Make sure local git is in sync with remote."
+  desc 'Make sure local git is in sync with remote.'
   task :confirm do
     on roles(:app) do
       puts "This stage is '#{fetch(:stage)}'. Deploying branch is '#{fetch(:branch)}'."
@@ -30,7 +31,7 @@ namespace :deploy do
     end
   end
 
-  desc "Restart Application"
+  desc 'Restart Application'
   task :initial do
     on roles(:app), in: :sequence, wait: 5 do
       invoke 'puma:restart'
