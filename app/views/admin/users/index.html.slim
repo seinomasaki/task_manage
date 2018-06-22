@@ -17,7 +17,7 @@
           td = user.name.truncate(25)
           td = user.email.truncate(25)
           td = user.general
-          td = t("activerecord.attributes.admin.#{user.admin}")
+          td = user.admin
           td = link_to t('activerecord.attributes.link.edit'), edit_admin_user_path(user.id), id: 'edit_id', class: "btn"
           td = link_to_if !user.admin? || @users.where(admin: true).size>1, t('activerecord.attributes.formalities.delete'), admin_user_path(user.id), method: :delete, id: 'delete_id', class: "btn", data: { title: "削除の確認", confirm: "本当に「#{user.name}」を削除してよろしいですか？", :commit => "削除する", :cancel => "キャンセル"}
   br

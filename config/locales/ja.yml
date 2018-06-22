@@ -23,10 +23,6 @@ ja:
         general: 性別
         admin: 管理者権限
 
-      admin:
-        true: 管理者
-        false: 一般
-
       summary:
         group: 担当グループ
         close_to_deadline: 期限1週間以内
