@@ -1,10 +1,4 @@
 ja:
-  enums:
-    user:
-      admin:
-        true: 管理者
-        false: 一般
-
   activerecord:
     header:
       title: 神々の戯れ
