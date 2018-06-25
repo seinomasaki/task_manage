@@ -9,13 +9,13 @@
               = text_field_tag :task_name, params[:task_name], class: "form-control"
             .col-sm-3
               = label_tag :label, "ラベル"
-              = select_tag :label_ids, options_from_collection_for_select(Label.all, :id, :name), class: "select-label", multiple: true
+              = select_tag :label_ids, options_from_collection_for_select(Label.all, :id, :name, {:selected => params[:label_ids]}), class: "select-label", multiple: true
             .col-sm-2
               = label_tag :status, "着手状況"
-              = select_tag :status, options_for_select(Summary.statuses), include_blank: true, class: "form-control"
+              = select_tag :status, options_for_select(Summary.statuses, params[:status]), include_blank: true, class: "form-control"
             .col-sm-2
               = label_tag :priority, "優先度"
-              = select_tag :priority, options_for_select(Summary.priorities), include_blank: true, class: "form-control"
+              = select_tag :priority, options_for_select(Summary.priorities, params[:priority]), include_blank: true, class: "form-control"
             .col-sm-1.mt25
               = submit_tag "検索", class: "btn btn-primary"
 

@@ -14,19 +14,19 @@
               label
                 span class="label label-danger mr10" 必須
                 = Summary.human_attribute_name :status
-              dt = f.select :status, options_for_select(Summary.statuses), {include_blank: true}, class: "form-control select_label"
+              dt = f.select :status, options_for_select(Summary.statuses, @task.status), {include_blank: true}, class: "form-control select_label"
             .row.col-sm-12.form-control-static
               = f.fields_for @task.task_labels do
                 label
                   span class="label label-default mr10" 任意
                   = Summary.human_attribute_name :group
-              dt = select_tag 'summary[group_id]', options_from_collection_for_select(Group.all, :id, :name), include_blank: true, class: "select-label"
+              dt = select_tag 'summary[group_id]', options_from_collection_for_select(Group.all, :id, :name, {:selected => @task.group_id}), include_blank: true, class: "select-label"
             .row.col-sm-12.form-control-static
               = f.fields_for @task.task_labels do
                 label
                   span class="label label-default mr10" 任意
                   = Summary.human_attribute_name :label
-              dt = select_tag :label_id, options_from_collection_for_select(Label.all, :id, :name), include_blank: true, multiple: true, class: "select-label"
+              dt = select_tag :label_id, options_from_collection_for_select(Label.all, :id, :name, {:selected => @task.label_ids}), include_blank: true, multiple: true, class: "select-label"
             .row.col-sm-12.form-control-static
               label
                 span class="label label-default mr10" 任意
@@ -38,7 +38,7 @@
               label
                 span class="label label-danger mr10" 必須
                 = Summary.human_attribute_name :priority
-              dt = f.select :priority, options_for_select(Summary.priorities), {include_blank: true}, class: "form-control select_label"
+              dt = f.select :priority, options_for_select(Summary.priorities, @task.priority), {include_blank: true}, class: "form-control select_label"
             .row.col-sm-12.form-control-static style='height:100%;'
               label
                 span class="label label-default mr10" 任意

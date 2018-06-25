@@ -9,8 +9,8 @@ class SummariesController < ApplicationController
                     .search(params)
                     .page(params[:page]).per(10)
 
-    @tasks_close_to_deadline = @tasks.closing_deadline
-    @tasks_deadline_over = @tasks.deadline_over
+    @tasks_close_to_deadline = Summary.closing_deadline
+    @tasks_deadline_over = Summary.deadline_over
   end
 
   def new

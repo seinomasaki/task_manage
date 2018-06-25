@@ -2,7 +2,7 @@
   h2 = I18n.t('activerecord.attributes.view.group.show')
 
   .row.form-group
-    div class="col-xs-12 col-sm-12 col-md-12"
+    .col-xs-12.col-sm-12.col-md-12
       dl.form-control-static
         .col-sm-4
           dt = Group.human_attribute_name :name
@@ -18,7 +18,7 @@
 
 
   div style='height:48vh; overflow-y:auto'
-    table.table-bordered.table-hover.table
+    table.table-bordered.tr-hover.table
       tr
         th.col-sm-2.text-center = Summary.human_attribute_name :task_name
         th.col-sm-2.text-center = Summary.human_attribute_name :label

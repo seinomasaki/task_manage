@@ -5,9 +5,11 @@ set :application, 'task_manage'
 set :repo_url, 'git@github.com:seinomasaki/task_manage.git'
 set :deploy_to, '/var/www/rails/task_manage'
 ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
-
+set :rbenv_ruby, '2.5.1'
+set :rbenv_custom_path, '/home/masaki/.rbenv/'
 set :format, :pretty
 set :log_level, :debug
+set :linked_files, %w{config/master.key}
 
 namespace :deploy do
   desc 'Make sure local git is in sync with remote.'

@@ -9,13 +9,13 @@
               = text_field_tag :task_name, params[:task_name], class: "form-control"
             .col-sm-3
               = label_tag :label, "ラベル"
-              = select_tag :label_ids, options_from_collection_for_select(Label.all, :id, :name), class: "select-label", multiple: true
+              = select_tag :label_ids, options_from_collection_for_select(Label.all, :id, :name, {:selected => params[:label_ids]}), class: "select-label", multiple: true
             .col-sm-2
               = label_tag :status, "着手状況"
-              = select_tag :status, options_for_select(Summary.statuses), include_blank: true, class: "form-control"
+              = select_tag :status, options_for_select(Summary.statuses, params[:status]), include_blank: true, class: "form-control"
             .col-sm-2
               = label_tag :priority, "優先度"
-              = select_tag :priority, options_for_select(Summary.priorities), include_blank: true, class: "form-control"
+              = select_tag :priority, options_for_select(Summary.priorities, params[:priority]), include_blank: true, class: "form-control"
             .col-sm-1.mt25
               = submit_tag "検索", class: "btn btn-primary"
 
@@ -25,7 +25,7 @@
 
   div style='margin:1px; float: left; width:15%;'
     div style='height:40vh; overflow-y:auto'
-      table.table-bordered.table-hover.table width='100%'
+      table.table-bordered.tr-hover.table width='100%'
         thead
           tr
             th.text-center.text-warning = Summary.human_attribute_name :close_to_deadline
@@ -35,7 +35,7 @@
               td = task.task_name.truncate(15)
 
     div style='height:40vh; overflow-y:auto'
-      table.table-bordered.table-hover.table.mt20 width='100%'
+      table.table-bordered.tr-hover.table.mt20 width='100%'
         thead
           tr
             th.text-center.text-danger = Summary.human_attribute_name :deadline_over
@@ -46,7 +46,7 @@
 
 
   div  style='float: right; width:84%; margin:1px;'
-    table.table-bordered.table-hover.table
+    table.table-bordered.tr-hover.table
       tr
         th.col-sm-3.text-center
           = Summary.human_attribute_name :group

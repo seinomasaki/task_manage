@@ -53,13 +53,13 @@ gem 'bootstrap-sass', '~> 3.3.6'
 gem 'jquery-rails'
 gem 'toastr-rails'
 gem 'bcrypt', '~> 3.1.7'
+# gem 'dropzonejs-rails'
 
 gem 'carrierwave'
 gem 'rmagick'
 gem 'fastimage'
 
 
-# gem 'dropzonejs-rails'
 gem 'chartkick'
 
 gem 'vuejs-rails'

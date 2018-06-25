@@ -11,7 +11,7 @@
       .col-xs-4.text-right.lead
         = link_to '>', admin_summaries_calendar_path(:datetime => @date_time.next_month)
 
-      table.table-bordered.td-hover style='height:300px; width:100%'
+      table.table-bordered.admin-td-hover style='height:300px; width:100%'
         thead
           tr
             - I18n.t('calendar.week').each do |weekday|
@@ -27,7 +27,7 @@
                     .text-center =  "#{tasks.count} 件"
 
     .col-xs-4
-      table.table-bordered.table-hover.table style='width:100%'
+      table.table-bordered.tr-hover.table style='width:100%'
         thead
           tr
             td.text-center v-if="select_tasks.length == 0" colspan="2"
