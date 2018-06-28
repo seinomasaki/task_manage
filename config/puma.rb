@@ -33,6 +33,12 @@ environment ENV.fetch("RAILS_ENV") { "development" }
 # Allow puma to be restarted by `rails restart` command.
 plugin :tmp_restart
 
+
+on_restart do
+  puts 'Refreshing Gemfile'
+  ENV["BUNDLE_GEMFILE"] = "<%= fetch(:bundle_gemfile, "#{current_path}/Gemfile") %>"
+end
+
 #
 # app_dir = File.expand_path("../..", __FILE__)
 # bind "unix://#{app_dir}/tmp/sockets/puma.sock"
