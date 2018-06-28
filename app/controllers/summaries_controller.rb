@@ -4,13 +4,13 @@ class SummariesController < ApplicationController
   helper_method :sort_column, :sort_oder
 
   def index
-    @tasks = Summary.relate_to_myself(@current_user)
+    @tasks = Summary.search(params)
+                    .relate_to_myself(@current_user)
                     .order(sort_column + ' ' + sort_oder)
-                    .search(params)
                     .page(params[:page]).per(10)
 
-    @tasks_close_to_deadline = @tasks.closing_deadline
-    @tasks_deadline_over = @tasks.deadline_over
+    @tasks_close_to_deadline = Summary.relate_to_myself(@current_user).close_deadline
+    @tasks_deadline_over = Summary.relate_to_myself(@current_user).deadline_over
   end
 
   def new
@@ -23,14 +23,14 @@ class SummariesController < ApplicationController
     @task.user_id = @current_user.id
     if @task.save
       if params[:group_id].present?
-        group = group_menber(params[:group_id])
+        group = Group.find(params[:group_id])
         group.users.each do |user|
-          PostMailer.post_email(user, @current_user, @task).deliver
+          PostMailer.post_email(user.email, @current_user, @task).deliver
         end
       else
-        PostMailer.post_email(@current_user, @current_user, @task).deliver
+        PostMailer.post_email(@current_user.email, @current_user, @task).deliver
       end
-      connect_related_table
+      connect_table
       flash[:success] = t('activerecord.attributes.flash.create')
       redirect_to root_path
     else
@@ -103,7 +103,7 @@ class SummariesController < ApplicationController
     Summary.column_names.include?(params[:sort]) ? params[:sort] : 'created_at'
   end
 
-  def connect_related_table
+  def connect_table
     label_ids = params[:label_id]
     if label_ids.present?
       label_ids.each do |label_id|

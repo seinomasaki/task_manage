@@ -5,7 +5,7 @@ class Admin::LabelsController < ApplicationController
   layout 'admin'
 
   def index
-    @labels = Label.all.page(params[:page]).per(10)
+    @labels = Label.all
     @label = Label.new
     @graph_data = TaskLabel.joins(:label).group('labels.name').count
   end

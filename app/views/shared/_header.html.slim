@@ -1,0 +1,31 @@
+header
+  nav class='navbar'
+    .container-fluid
+      h1 = I18n.t('activerecord.header.title')
+      button type='button' class='navbar-toggle collapsed' data-toggle='collapse' data-target='#navbarEexample'
+        span class='sr-only' Toggle navigation
+        span class='icon-bar'
+        span class='icon-bar'
+        span class='icon-bar'
+
+      div class='collapse navbar-collapse navbar-header text-center'
+        ul class='nav navbar-nav'
+          li.text-center = link_to I18n.t('activerecord.header.calendar'), calendar
+          li.text-center = link_to I18n.t('activerecord.header.task.index'), tasks
+          li.text-center = link_to I18n.t('activerecord.header.label.index'), labels
+          - if groups.include?("admin")
+            li.text-center = link_to I18n.t('activerecord.header.group.admin'), groups
+          - else
+            li.text-center = link_to I18n.t('activerecord.header.group.general'), groups
+          li.text-center = link_to I18n.t('activerecord.header.user.index'), users
+
+      div class='collapse navbar-collapse navbar-header text-center pull-right'
+        ul class='nav navbar-nav'
+          li.dropdown
+            a.dropdown-toggle.font-size-18 data-toggle='dropdown'
+              = name
+              b class='caret'
+            ul class='dropdown-menu dropdown-menu-right'
+              li.text-center = link_to I18n.t('activerecord.header.user.edit'), edit_user
+              li.text-center = link_to I18n.t('activerecord.header.user.show'), user
+              li.text-center = link_to t('activerecord.attributes.formalities.logout'), logout, method: :delete

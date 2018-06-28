@@ -6,18 +6,17 @@ class Admin::SummariesController < ApplicationController
   layout 'admin'
 
   def index
-    @tasks = Summary.all
+    @tasks = Summary.search(params)
                     .order(sort_column + ' ' + sort_oder)
-                    .search(params)
                     .page(params[:page]).per(10)
 
-    @tasks_close_to_deadline = @tasks.closing_deadline
-    @tasks_deadline_over = @tasks.deadline_over
+    @tasks_close_to_deadline = Summary.close_deadline
+    @tasks_deadline_over = Summary.deadline_over
   end
 
   def new
     @task = Summary.new
-    5.times { @task.attachments.build }
+    5.times { @task.attachments.new }
   end
 
   def create
@@ -25,12 +24,12 @@ class Admin::SummariesController < ApplicationController
     @task.user_id = @current_user.id
     if @task.save
       if params[:group_id].present?
-        group = group_menber(params[:group_id])
+        group = Group.find(params[:group_id])
         group.users.each do |user|
-          PostMailer.post_email(user, @current_user, @task).deliver
+          PostMailer.post_email(user.email, @current_user, @task).deliver
         end
       else
-        PostMailer.post_email(@current_user, @current_user, @task).deliver
+        PostMailer.post_email(@current_user.email, @current_user, @task).deliver
       end
       connect_label
       flash[:success] = t('activerecord.attributes.flash.create')
@@ -41,11 +40,13 @@ class Admin::SummariesController < ApplicationController
     end
   end
 
-  def show
-    @files = Attachment.where(summary_id: @task.id)
-  end
+  def show; end
 
-  def edit; end
+  def edit
+    if @task.attachments.present?
+      (5 - @task.attachments.size).times {@task.attachments.new}
+    end
+  end
 
   def destroy
     @task.destroy

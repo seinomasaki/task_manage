@@ -1,0 +1,16 @@
+.row.form-group
+  div class="col-xs-12 col-sm-12 col-md-12"
+    dl.form-control-static
+      .col-sm-4
+        dt = Group.human_attribute_name :name
+        dd.well.well-sm = group.name
+      .col-sm-8
+        dt = Group.human_attribute_name :users
+        dd.well.well-sm
+          - group.users.each do |user|
+            = user.name+ ' '
+      .col-sm-12
+        dt = Group.human_attribute_name :intention
+        dd.well.well-sm = group.intention
+
+= render 'shared/template/group/group_task', {login_user: login_user, tasks: tasks}

@@ -1,0 +1,15 @@
+td = user.name.truncate(25)
+td = user.email.truncate(25)
+td = user.general
+td
+  - if user.admin
+    = I18n.t('authotity.admin')
+  -else
+    = I18n.t('authotity.general')
+- if login_user
+  td.font-size-12
+    = link_to t('activerecord.attributes.link.edit'), edit_path, id: 'edit_id', class: "btn btn-xs"
+    - if !user.admin? || users.where(admin: true).size>1
+      = link_to t('activerecord.attributes.formalities.delete'), path, method: :delete, id: 'delete_id', class: "btn btn-xs", data: { title: "削除の確認", confirm: "本当に「#{user.name}」を削除してよろしいですか？", :commit => "削除する", :cancel => "キャンセル"}
+    - else
+      = link_to t('activerecord.attributes.formalities.delete'), path, method: :delete, id: 'delete_id', class: "btn btn-xs disabled", data: {title: "削除の確認", confirm: "本当に「#{user.name}」を削除してよろしいですか？", :commit => "削除する", :cancel => "キャンセル"}

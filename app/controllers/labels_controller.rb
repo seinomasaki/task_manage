@@ -4,7 +4,7 @@ class LabelsController < ApplicationController
 
 
   def index
-    @labels = Label.all.page(params[:page]).per(10)
+    @labels = Label.all
     @label = Label.new
   end
 

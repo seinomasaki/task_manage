@@ -31,8 +31,8 @@ window.onload = function() {
                     alert ("fail: #{response}")
                 });
             },
-            onClickLink: function (response) {
-                window.location.href = response
+            showTask: function (task_path) {
+                window.location.href = task_path
             }
         }
     })

@@ -1,0 +1,22 @@
+.ml50.mt5 style='margin:1px; float: right; width:40%;'
+  = form_for @group do |f|
+    .form-control-static
+      .col-sm-12
+        label
+          span class="label label-danger mr10" 必須
+          = I18n.t('activerecord.attributes.group.name')
+        dt = f.text_field :name, class: 'form-control'
+      .col-sm-12
+        label
+          span class="label label-default mr10" 任意
+          = I18n.t('activerecord.attributes.group.intention')
+        dt = f.text_area :intention, class: 'form-control'
+      .col-sm-12
+        = f.fields_for @group.group_users do
+          label
+            span class="label label-default mr10" 任意
+            = I18n.t('activerecord.attributes.group.users')
+          dt = select_tag :user_id, options_from_collection_for_select(User.where.not(id: @current_user), :id, :name), multiple: true, class: "select-label"
+
+      .col-sm-2 class='pull-right'
+        = f.submit t('activerecord.attributes.formalities.creat'), class: "btn btn-primary mt20"

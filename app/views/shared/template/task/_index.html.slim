@@ -1,0 +1,64 @@
+div style='margin:1px; float: left; width:15%;'
+  div style='height:40vh; overflow-y:auto'
+    table.table-bordered.tr-hover.table width='100%'
+      thead
+        tr
+          th.text-center.text-warning = Summary.human_attribute_name :close_to_deadline
+        tr
+          th.text-center = Summary.human_attribute_name :task_name
+      tbody
+        - close_dead.each do |task|
+          - path = user ? admin_summary_path(task.id) : summary_path(task.id)
+          tr.text-center data-href="#{path}"
+            td = task.task_name.truncate(15)
+  br
+  div style='height:40vh; overflow-y:auto'
+    table.table-bordered.tr-hover.table width='100%'
+      thead
+        tr
+          th.text-center.text-danger = Summary.human_attribute_name :deadline_over
+        tr
+          th.text-center = Summary.human_attribute_name :task_name
+      tbody
+        - over_dead.each do |task|
+          - path = user ? admin_summary_path(task.id) : summary_path(task.id)
+          tr.text-center data-href="#{path}"
+            td = task.task_name.truncate(15)
+
+div style='float: right; width:84%; margin:1px;'
+  table.table-bordered.table-hover.table
+    thead
+      tr
+        th.col-sm-2.text-center = Summary.human_attribute_name :group
+        th.col-sm-2.text-center = Summary.human_attribute_name :make_user
+        th.col-sm-2.text-center = Summary.human_attribute_name :task_name
+        th.col-sm-2.text-center = Summary.human_attribute_name :label
+        th.col-sm-1.text-center = sortable 'priority', t('activerecord.attributes.summary.priority')
+        th.col-sm-1.text-center = Summary.human_attribute_name :status
+        th.col-sm-1.text-center = sortable 'time_limit', t('activerecord.attributes.summary.time_limit')
+        th
+    tbody
+      - all_tasks.each do |task|
+        - path = user ? admin_summary_path(task.id) : summary_path(task.id)
+        - edit_path = user ? edit_admin_summary_path(task.id) : edit_summary_path(task.id)
+        tr.text-center data-href="#{summary_path(task.id)}"
+          td
+            - if task.group_id.present?
+              = Group.find(task.group_id).name
+            - else
+              = '---'
+          td = task.user.name
+          td = task.task_name.truncate(15)
+          td
+            - task.labels.each do |label|
+              = label.name+ ' '
+          td = task.priority
+          td = task.status
+          td = task.time_limit
+          td
+            = link_to t('activerecord.attributes.link.edit'), edit_path, id: 'edit_id', class: "btn btn-xs"
+            br
+            = link_to t('activerecord.attributes.formalities.delete'), path, method: :delete, id: 'delete_id', class: "btn btn-xs", data: {title: "削除の確認", confirm: "本当に「#{task.task_name}」を削除してよろしいですか？", :commit => "削除する", :cancel => "キャンセル"}
+
+  div class="text-center"
+    = paginate all_tasks

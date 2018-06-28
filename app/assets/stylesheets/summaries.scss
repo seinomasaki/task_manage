@@ -1,39 +1,6 @@
 // Place all the styles related to the summaries controller here.
 // They will automatically be included in application.scss.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-@for $i from 0 through 30 {
-  .mt#{$i * 5} {
-    margin-top:#{$i * 5}px !important;
-  }
-  .mb#{$i * 5} {
-    margin-bottom:#{$i * 5}px !important;
-  }
-  .pt#{$i * 5} {
-    padding-top:#{$i * 5}px !important;
-  }
-  .pb#{$i * 5} {
-    padding-bottom:#{$i * 5}px !important;
-  }
-  .ml#{$i * 5} {
-    margin-left:#{$i * 5}px !important;
-  }
-  .mr#{$i * 5} {
-    margin-right:#{$i * 5}px !important;
-  }
-}
-
-.poj{
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  margin: auto;
-
-  width: 128px;
-  height: 64px;
-}
-
 .well-text {
   min-height: 20px;
   padding:100px;
@@ -43,10 +10,4 @@
   border-radius: 4px;
   -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
   box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
-}
-
-.td-hover {
-  > tbody > tr > td:hover {
-    background-color:#f5f5f5;
-  }
 }

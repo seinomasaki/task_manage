@@ -1,34 +1,7 @@
 .container
-  .col-sm-7
-    table class="table-bordered table-hover table" style='height:400; overflow-y:auto'
-      thead
-        tr
-          th.text-center.col-sm-7 = I18n.t('activerecord.attributes.summary.label')
-          th.text-center.col-sm-4 = I18n.t('activerecord.attributes.summary.created_at')
-          th
-
-      tbody
-        - @labels.each do |label|
-          tr.text-center
-            td = label.name
-            td = label.created_at
-            td = link_to t('activerecord.attributes.formalities.delete'), label_path(label.id), method: :delete, id: 'delete_id', class: "btn", data: {title: "削除の確認", confirm: "本当に「#{label.name}」を削除してよろしいですか？", :commit => "削除する", :cancel => "キャンセル"}
-    br
-    = paginate @labels
-
-  .col-sm-4.ml50
+  = render 'shared/template/label/labels_table', {user: @current_user.admin, labels: @labels}
+  div style='margin:1px; float: right; width:45%;'
     = form_for @label do |f|
-      .form-control-static
-        .col-sm-8
-          label
-            = I18n.t('activerecord.attributes.label.name')
-          th = f.text_field :name, class: "form-control "
-        .col-sm-4
-          br
-          = f.submit t('activerecord.attributes.formalities.creat'), class: "btn btn-primary mt5"
+      = render 'shared/template/label/label_new_record', f: f
 
-
-javascript:
-    jQuery(function ($) {
-        $('tbody').sortable();
-    });
+= render 'shared/template/sortable'

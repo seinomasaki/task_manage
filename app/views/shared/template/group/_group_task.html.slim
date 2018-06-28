@@ -1,0 +1,24 @@
+div style='height:48vh; overflow-y:auto'
+  table.table-bordered.table-hover.table
+    thead
+      tr
+        th.col-sm-2.text-center = Summary.human_attribute_name :task_name
+        th.col-sm-2.text-center = Summary.human_attribute_name :label
+        th.col-sm-3.text-center = Summary.human_attribute_name :contents
+        th.col-sm-1.text-center = sortable 'priority', t('activerecord.attributes.summary.priority')
+        th.col-sm-1.text-center = Summary.human_attribute_name :status
+        th.text-center = sortable 'time_limit', t('activerecord.attributes.summary.time_limit')
+        th.col-sm-1.text-center = Summary.human_attribute_name :make_user
+    tbody
+      - tasks.each do |task|
+        - path = login_user ? admin_summary_path(task.id) : summary_path(task.id)
+        tr.text-center data-href="#{path}"
+          td = task.task_name.truncate(15)
+          td
+            - task.labels.each do |label|
+              = label.name+ ' '
+          td = task.contents.truncate(25)
+          td = task.priority
+          td = task.status
+          td = task.time_limit
+          td = task.user.name

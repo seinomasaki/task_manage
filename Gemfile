@@ -59,7 +59,6 @@ gem 'rmagick'
 gem 'fastimage'
 
 
-# gem 'dropzonejs-rails'
 gem 'chartkick'
 
 gem 'vuejs-rails'
@@ -76,6 +75,7 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'rspec-rails'
   gem 'pry-rails'
+  gem 'pry-byebug'
 end
 
 group :development do

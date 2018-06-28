@@ -9,12 +9,12 @@ class SessionsController < ApplicationController
     user = User.find_by(email: params[:session][:email].downcase)
     if user && user.authenticate(params[:session][:password])
       log_in user
-      flash[:success] = t('activerecord.attributes.flash.login')
       if user.admin
         redirect_to admin_summaries_path
       else
         redirect_to summaries_path
       end
+      flash[:success] = t('activerecord.attributes.flash.login')
     else
       flash[:error] = t('activerecord.attributes.flash.failure')
       render 'new'

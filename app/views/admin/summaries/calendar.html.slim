@@ -1,45 +1,4 @@
 .container
   h2 = I18n.t('activerecord.attributes.view.summary.calendar')
   br
-
-  div id='calendar-tasks'
-    .col-xs-8
-      .col-xs-4.text-left.lead
-        = link_to '<', admin_summaries_calendar_path(:datetime => @date_time.last_month)
-      .col-xs-4.text-center.lead
-        = @date_time.strftime('%Y年 %m月')
-      .col-xs-4.text-right.lead
-        = link_to '>', admin_summaries_calendar_path(:datetime => @date_time.next_month)
-
-      table.table-bordered.td-hover style='height:300px; width:100%'
-        thead
-          tr
-            - I18n.t('calendar.week').each do |weekday|
-              td.text-center.col-sm-1 = weekday
-        tbody
-          - 0.upto(@weekly-1) do |week|
-            tr
-              - @day_tasks[week*7..week*7+6].each do |day, tasks|
-                td @click="showTasks(#{@date_time.year},#{@date_time.month},#{day})"
-                  .text-left.ml5 = day
-                  br
-                  - if day.present?
-                    .text-center =  "#{tasks.count} 件"
-
-    .col-xs-4
-      table.table-bordered.table-hover.table style='width:100%'
-        thead
-          tr
-            td.text-center v-if="select_tasks.length == 0" colspan="2"
-              = @date_time.strftime('%Y年 %m月 %d日')
-            td.text-center v-if="select_tasks.length > 0" colspan="2"
-              |{{year}}年 {{month}}月 {{day}}日
-
-        tbody
-          tr v-if="select_tasks.length == 0"
-            td.text-center
-              = 'Taskないよ'
-          div v-if="select_tasks.length > 0"
-            tr v-for="task in select_tasks" @click="onClickLink('/admin/summaries/'+task.id)"
-              td.text-center.col-xs-8 v-html="task.task_name"
-              td.text-center.col-xs-4 v-html="task.status"
+  = render 'shared/template/task/calendar', {tasks: @day_tasks, date: @date_time, weekly: @weekly, lastM_path: admin_summaries_calendar_path(:datetime => @date_time.last_month), nextM_path: admin_summaries_calendar_path(:datetime => @date_time.next_month), url: '/admin/summaries/'}

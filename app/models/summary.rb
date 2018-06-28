@@ -25,10 +25,6 @@ class Summary < ApplicationRecord
     end
   end
 
-  def self.group_member(group_id)
-    Group.find(group_id)
-  end
-
   def self.search(params)
     tasks = Summary.all
     if params[:task_name].present?
@@ -47,15 +43,15 @@ class Summary < ApplicationRecord
     tasks
   end
 
-  def self.closing_deadline
+  def self.close_deadline
     now = Date.current
     week_later = now + 1.week
-    Summary.where('(time_limit >= ?) and (time_limit <= ?)', now, week_later).where.not(status: '完了')
+    self.where('(time_limit >= ?) and (time_limit <= ?)', now, week_later).where.not(status: '完了')
   end
 
   def self.deadline_over
     now = Date.current
-    Summary.where('time_limit <= ?', now).where.not(status: '完了')
+    self.where('time_limit <= ?', now).where.not(status: '完了')
   end
 
   def self.month_task(datetime, tasks)

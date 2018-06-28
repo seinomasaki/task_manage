@@ -1,0 +1,23 @@
+= form_for @group do |f|
+  .form-control-static
+    .col-sm-12
+      label
+        span class="label label-danger mr10" 必須
+        = I18n.t('activerecord.attributes.group.name')
+      dt = f.text_field :name, class: "form-control "
+    .col-sm-12
+      label
+        span class="label label-default mr10" 任意
+        = I18n.t('activerecord.attributes.group.intention')
+      dt = f.text_area :intention, class: "form-control"
+    .col-sm-12
+      = f.fields_for @group.group_users do
+        label
+          span class="label label-default mr10" 任意
+          = I18n.t('activerecord.attributes.group.users')
+        dt = select_tag :user_id, options_from_collection_for_select(User.all, :id, :name, {:selected => @group.users.ids}), multiple: true, class: "select-label"
+
+    .col-sm-4
+      br
+      = f.submit t('activerecord.attributes.formalities.creat'), class: "btn btn-primary mt5"
+      = link_to t('activerecord.attributes.link.cansel'), path, class: "btn btn-primary mt5 ml10"
