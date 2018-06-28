@@ -1,0 +1,21 @@
+div style='margin:1px; float: left; width:50%; height:80vh;'
+  div style='overflow-y:auto'
+    table.mt20.table-bordered.table-hover.table
+      thead
+        tr
+          th.text-center.col-sm-4 = I18n.t('activerecord.attributes.group.name')
+          th.text-center.col-sm-6 = I18n.t('activerecord.attributes.group.users')
+          th
+
+      tbody
+        - groups.each do |group|
+          - edit_path = user ? edit_admin_group_path(group.id) : edit_group_path(group.id)
+          tr.text-center data-href="#{admin_group_path(group.id)}"
+            td = group.name
+            td
+              - group.users.each do |user|
+                = user.name+' '
+            td
+              = link_to t('activerecord.attributes.link.edit'), edit_path, class: "btn btn-xs"
+              - if user
+                = link_to t('activerecord.attributes.formalities.delete'), admin_group_path(group.id), method: :delete, id: 'delete_id', class: "btn btn-xs", data: {title: "削除の確認", confirm: "本当に「#{group.name}」を削除してよろしいですか？", :commit => "削除する", :cancel => "キャンセル"}

@@ -53,7 +53,6 @@ gem 'bootstrap-sass', '~> 3.3.6'
 gem 'jquery-rails'
 gem 'toastr-rails'
 gem 'bcrypt', '~> 3.1.7'
-# gem 'dropzonejs-rails'
 
 gem 'carrierwave'
 gem 'rmagick'
@@ -76,6 +75,7 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'rspec-rails'
   gem 'pry-rails'
+  gem 'pry-byebug'
 end
 
 group :development do

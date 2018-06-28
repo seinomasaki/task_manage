@@ -1,0 +1,8 @@
+.form-control-static
+  .col-sm-8
+    label
+      = I18n.t('activerecord.attributes.label.name')
+    th = f.text_field :name, class: "form-control"
+  .col-sm-4
+    br
+    = f.submit t('activerecord.attributes.formalities.creat'), class: "btn btn-primary mt5"

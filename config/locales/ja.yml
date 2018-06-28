@@ -1,6 +1,11 @@
 ja:
+  authotity:
+    admin: 管理者
+    general: 一般者
+
   activerecord:
     header:
+      login: user認証
       title: 神々の戯れ
       calendar: カレンダー
       task:
@@ -12,6 +17,8 @@ ja:
         index: ユーザ一覧
         show: プロフィール
         edit: プロフィール編集
+
+
       group:
         admin: グループ管理
         general: 所属グループ一覧
@@ -53,6 +60,7 @@ ja:
         middle: 中間
 
       link:
+        back: 戻る
         password_reset: パスワード再設定
         task_janp: タスク一覧
         index: 一覧

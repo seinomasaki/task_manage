@@ -1,0 +1,40 @@
+.col-sm-12.form-control-static.form-group
+  label
+    span class='label label-danger mr10' 必須
+    = f.label :name, I18n.t('activerecord.attributes.user.name')
+  dt = f.text_field :name, class: 'form-control'
+.col-sm-12.form-control-static.form-group
+  label
+    span class='label label-danger mr10' 必須
+    = f.label :email, I18n.t('activerecord.attributes.user.email')
+  dt = f.text_field :email, class: 'form-control'
+.col-sm-12.form-control-static
+  label
+    span class='label label-danger mr10' 必須
+    = f.label :password, 'PassWord'
+  dt = f.password_field :password, class: 'form-control'
+.col-sm-12.form-control-static
+  label
+    span class='label label-danger mr10' 必須
+    = f.label :password_confirmation, 'PassWord'
+  dt = f.password_field :password_confirmation, class: 'form-control'
+label.mt10.form-group
+  span class='label label-default mt20 ml15' 任意
+  = f.label :general, I18n.t('activerecord.attributes.general.title'), class: 'ml10'
+.row.ml10
+  .col-sm-12.btu-group data-toggle='buttons'
+    label.btn.btn-primary style='width:30%'
+      = f.label :general, I18n.t('activerecord.attributes.general.man')
+      = f.radio_button :general, I18n.t('activerecord.attributes.general.man')
+    label.btn.btn-primary style='width:30%'
+      = f.label :general, I18n.t('activerecord.attributes.general.middle')
+      = f.radio_button :general, I18n.t('activerecord.attributes.general.middle')
+    label.btn.btn-primary style='width:30%'
+      = f.label :general, I18n.t('activerecord.attributes.general.woman')
+      = f.radio_button :general, I18n.t('activerecord.attributes.general.woman')
+
+= f.file_field :profile_image, class: 'mt20'
+
+
+= f.submit t('activerecord.attributes.formalities.creat'),class: 'btn btn-primary mt20'
+= link_to t('activerecord.attributes.link.cansel'), :back, class: 'btn btn-primary mt20 ml10'

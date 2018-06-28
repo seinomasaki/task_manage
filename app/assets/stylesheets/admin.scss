@@ -1,12 +1,13 @@
 /*
 *= require_self
 *= require toastr
- */
-@import "sessions";
+*/
 @import "summaries";
 @import "users";
 @import "groups";
+@import "labels";
 
+@import "fine_adjustment";
 
 $main_color1: #FFA258;
 $main_color2: #f9bf8f;
@@ -70,4 +71,16 @@ body {
 
 .nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
   background-color: $action_color;
+}
+
+.table-hover{
+  > tbody > tr:hover {
+    background-color: #FFA258;
+  }
+}
+
+.td-hover {
+  > tbody > tr > td:hover {
+    background-color: #FFA258;
+  }
 }

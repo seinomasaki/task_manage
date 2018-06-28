@@ -46,11 +46,11 @@ RSpec.feature 'Summaries', type: :feature, js: true do
 
 
   describe 'update task' do
+    let!(:task) { FactoryGirl.create(:summary, task_name: 'ruby on rails (mySQL)', label: 'before label') }
     before do
       visit summaries_path
       page.all('tbody tr')[0].find_by_id('edit_id').click
     end
-    let(:task) { FactoryGirl.create(:summary, label: 'before label') }
     context 'task word change' do
       before do
         fill_in 'summary[task_name]', with: 'Rspec'
@@ -61,7 +61,7 @@ RSpec.feature 'Summaries', type: :feature, js: true do
         expect(page).to have_content '編集しました。'
       end
       it 'summary[task_name]: ruby on rails (mySQL) -> Rspec' do
-        expect('Rspec').to eq(task.task_name)
+        expect(task.task_name).to eq('Rspec')
       end
     end
   end

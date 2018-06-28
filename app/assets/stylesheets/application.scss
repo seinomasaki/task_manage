@@ -12,14 +12,13 @@
  *
  *= require_self
  *= require toastr
- * require dropzone/basic
- * require dropzone/dropzone
  */
-@import "sessions";
 @import "summaries";
 @import "users";
+@import "groups";
+@import "labels";
 
-
+@import "fine_adjustment";
 
 
 $main_color1: #0099FF;
@@ -84,4 +83,11 @@ body {
 
 .nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
   background-color: $action_color;
+}
+
+
+.td-hover {
+  > tbody > tr > td:hover {
+    background-color: #f5f5f5;
+  }
 }

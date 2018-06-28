@@ -1,62 +1,7 @@
 .container
   h2 = I18n.t('activerecord.attributes.view.group.index')
-  div style='margin:1px; float: left; width:50%; height:80vh;'
-    div style='overflow-y:auto'
-      table.mt20.table-bordered.tr-hover.table
-        thead
-          tr
-            th.text-center.col-sm-5 = I18n.t('activerecord.attributes.group.name')
-            th.text-center.col-sm-5 = I18n.t('activerecord.attributes.group.users')
-            th.col-sm-1
-            th.col-sm-1
-
-        tbody
-          - @groups.each do |group|
-            tr.text-center data-href="#{admin_group_path(group.id)}"
-              td = group.name
-              td
-                - group.users.each do |user|
-                  = user.name+' '
-              td = link_to t('activerecord.attributes.link.edit'), edit_admin_group_path(group.id), class: "btn"
-              td = link_to t('activerecord.attributes.formalities.delete'), admin_group_path(group.id), method: :delete, id: 'delete_id', class: "btn", data: {title: "削除の確認", confirm: "本当に「#{group.name}」を削除してよろしいですか？", :commit => "削除する", :cancel => "キャンセル"}
-
-  .ml50.mt5 style='margin:1px; float: right; width:40%;'
-    = form_for @group do |f|
-      .form-control-static
-        .col-sm-12
-          label
-            span class="label label-danger mr10" 必須
-            = I18n.t('activerecord.attributes.group.name')
-          dt = f.text_field :name, class: 'form-control'
-        .col-sm-12
-          label
-            span class="label label-default mr10" 任意
-            = I18n.t('activerecord.attributes.group.intention')
-          dt = f.text_area :intention, class: 'form-control'
-        .col-sm-12
-          = f.fields_for @group.group_users do
-            label
-              span class="label label-default mr10" 任意
-              = I18n.t('activerecord.attributes.group.users')
-            dt = select_tag :user_id, options_from_collection_for_select(User.all, :id, :name), multiple: true, class: "select-label"
-
-        .col-sm-2 class='pull-right'
-          = f.submit t('activerecord.attributes.formalities.creat'), class: "btn btn-primary mt20"
+  = render 'shared/template/group/index', {user: @current_user.admin, groups: @groups}
+  = render 'shared/template/group/new_group'
 
 
-javascript:
-    jQuery( function($) {
-        $('tbody tr[data-href]').addClass('clickable').click( function() {
-            window.location = $(this).attr('data-href');
-        }).find('a').hover( function() {
-            $(this).parents('tr').unbind('click');
-        }, function() {
-            $(this).parents('tr').click( function() {
-                window.location = $(this).attr('data-href');
-            });
-        });
-        $('.select-label').select2({
-            placeholder: '選択して下さい',
-            width: "100%"
-        });
-    });
+= render 'shared/template/clickLink_select2'
